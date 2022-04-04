@@ -3,7 +3,7 @@ import ReviewCard from "../../ui/ReviewCard";
 function Reviews() {
   return (
     <section>
-      <div className="container-fluid px-4">
+      <div className="container py-5 my-5">
         <div className="row">
           <div className="col-12 ps-lg-5 ps-4 pb-4">
             <div className="h1 fw-bold col-lg-4 col-7">
@@ -13,13 +13,17 @@ function Reviews() {
         </div>
 
         {/* review cards */}
-        <div
-          className="row flex-nowrap example pb-md-5 ps-lg-5"
-          style={{ overflowX: "scroll" }}
-        >
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
-            <ReviewCard key={index} item={item} />
-          ))}
+        <div className="row justify-content-center pb-md-5">
+          <div className="col-11">
+            <div
+              className="row example flex-nowrap"
+              style={{ overflowX: "scroll" }}
+            >
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
+                <ReviewCard key={index} item={item} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>

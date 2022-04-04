@@ -33,16 +33,16 @@ function Wrapper() {
           <div className="ps-4 gap-2 col-10 col-md-9 col-lg-6 ps-lg-5 py-lg-5 py-2">
             <input
               type="email"
-              className="form-control border-0 mb-2 mb-md-5 mb-lg-0 rounded-3 py-md-3"
+              className="form-control border-0 mb-2 mb-md-5 mb-lg-0 rounded-3 py-3"
               placeholder="Find your meal..."
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
             />
           </div>
-          {/*<!-- large screen button -->*/}
-          <div className="col-6 d-lg-flex ps-4 py-md-5">
+          {/**/}
+          <div className="col-6 col-md-3 d-lg-flex ps-4 py-md-5">
             <button
-              className="btn px-md-5"
+              className="btn px-md-5 py-3 py-md-0 w-100"
               type="button"
               style={{ backgroundColor: "#f21b3f" }}
             >

@@ -2,7 +2,7 @@
 function Partners() {
   return (
     <section>
-      <div className="container-fluid py-5">
+      <div className="container py-5 my-5">
         <div className="row px-lg-5 px-1">
           <div className="col-lg-4 mt-2 col-12 col-md-5 pt-md-5 pt-lg-3">
             <div className="h1 col-9 col-lg-12 fw-bolder">
