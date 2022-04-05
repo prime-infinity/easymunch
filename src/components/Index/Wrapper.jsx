@@ -30,7 +30,7 @@ function Wrapper() {
             </p>
           </div>
 
-          <div className="ps-4 gap-2 col-10 col-md-9 col-lg-6 ps-lg-5 py-lg-5 py-2">
+          <div className="ps-4 gap-2 col-11 col-md-9 col-lg-6 ps-lg-5 py-lg-5 py-2">
             <input
               type="email"
               className="form-control border-0 mb-2 mb-md-5 mb-lg-0 rounded-3 py-3"
