@@ -3,7 +3,7 @@ import ReviewCard from "../../ui/ReviewCard";
 function Reviews() {
   return (
     <section>
-      <div className="container py-5 my-5">
+      <div className="container py-3 my-3">
         <div className="row">
           <div className="col-12 pb-4">
             <div className="h1 fw-bold col-lg-4 col-7">

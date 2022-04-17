@@ -2,7 +2,7 @@
 function Become() {
   return (
     <section>
-      <div className="container py-5">
+      <div className="container py-3">
         {/*<!-- large screen -->*/}
         <div className="row d-md-flex d-none">
           <div className="col-4">
