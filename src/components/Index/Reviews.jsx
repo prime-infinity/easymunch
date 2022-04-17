@@ -5,7 +5,7 @@ function Reviews() {
     <section>
       <div className="container py-5 my-5">
         <div className="row">
-          <div className="col-12 ps-lg-5 ps-4 pb-4">
+          <div className="col-12 pb-4">
             <div className="h1 fw-bold col-lg-4 col-7">
               What the Foodies say about us ☺️
             </div>
@@ -14,7 +14,7 @@ function Reviews() {
 
         {/* review cards */}
         <div className="row justify-content-center pb-md-5">
-          <div className="col-11">
+          <div className="col-12">
             <div
               className="row example flex-nowrap"
               style={{ overflowX: "scroll" }}

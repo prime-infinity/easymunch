@@ -4,7 +4,7 @@ function Become() {
     <section>
       <div className="container py-5">
         {/*<!-- large screen -->*/}
-        <div className="row d-md-flex d-none px-4">
+        <div className="row d-md-flex d-none">
           <div className="col-4">
             <div className="card border-0">
               <div className="card-body">
@@ -58,7 +58,7 @@ function Become() {
           </div>
         </div>
         {/*<!-- mobile screen -->*/}
-        <div className="row d-md-none pt-5 px-2">
+        <div className="row d-md-none pt-5">
           <div className="col-6">
             <a>
               <div className="h1 fw-bold">Become a Vendor</div>

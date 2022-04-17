@@ -3,10 +3,10 @@ import PopularDish from "../../ui/PopularDish";
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function PopularDishes() {
   return (
-    <section className="first-section">
+    <section className="">
       <div className="container my-5 py-5">
         <div className="row justify-content-center">
-          <div className="col-11">
+          <div className="col-12">
             <h3 className="fw-bold mb-4">Popular Dishes</h3>
             <div
               className="row flex-nowrap example"

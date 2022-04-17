@@ -1,6 +1,6 @@
 function PopularDish() {
   return (
-    <div className="col-9 col-md-5 col-lg-3 ">
+    <div className="col-10 col-md-5 col-lg-3 ">
       <div
         className="card border-0 popular-dishes-bg border-r-5"
         style={{ backgroundImage: "url(images/popular-dishes1.png)" }}

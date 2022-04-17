@@ -5,7 +5,6 @@ function Wrapper() {
       id="bgLanding"
       className=""
       style={{
-        position: "absolute",
         top: "0%",
         zIndex: "1",
         width: "100%",

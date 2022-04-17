@@ -142,3 +142,9 @@ a {
 .bg-black {
   background-color: black;
 }
+.bg-gr {
+  background-color: #f7f7f7;
+}
+.cur-pointer {
+  cursor: pointer;
+}

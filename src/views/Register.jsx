@@ -1,7 +1,45 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { register } from "../helpers/web";
+import { setAuth, saveAuthToLocal } from "../redux/silces/authSlice";
+import { Link, useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Register() {
+  let navigate = useNavigate();
+  const dispatch = useDispatch();
+  const [error, setErrors] = useState(null);
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+  });
+
+  const handleErrors = (e) => {
+    e.response?.data ? setErrors(e.response.data) : setErrors(e.message);
+  };
+
+  const handleSuccess = (e) => {
+    dispatch(setAuth(e));
+    dispatch(saveAuthToLocal());
+    navigate("/");
+  };
+
+  const registerUser = (e) => {
+    e.preventDefault();
+    setErrors(null);
+
+    register(formData)
+      .then((res) => {
+        handleSuccess(res);
+      })
+      .catch((err) => {
+        handleErrors(err);
+      });
+  };
+
+  const errorDiv = <small className="text-danger">{error}</small>;
+
   return (
     <div>
       <div className="container-fluid">
@@ -37,18 +75,21 @@ function Register() {
       </div>
       {/*<!-- inout group -->*/}
       <div className="container mt-5 mb-5">
-        <form action="">
+        <form onSubmit={registerUser}>
           {/*<!-- name -->*/}
           <div className="row d-flex justify-content-center my-4">
             <div className="col-11 col-md-8 col-lg-5">
-              <label htmlFor="exampleInputEmail1" className="form-label">
+              <label htmlFor="exampleInputName1" className="form-label">
                 <span className="h6">Name</span>
               </label>
               <input
-                type="email"
+                type="text"
                 className="form-control p-3 sign-up-form border-0"
-                id="exampleInputEmail1"
-                aria-describedby="emailHelp"
+                id="exampleInputName1"
+                value={formData.name}
+                onChange={(e) =>
+                  setFormData({ ...formData, name: e.target.value })
+                }
               />
             </div>
           </div>
@@ -63,6 +104,10 @@ function Register() {
                 className="form-control p-3 sign-up-form border-0"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
+                value={formData.email}
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
               />
             </div>
           </div>
@@ -91,15 +136,29 @@ function Register() {
                 id="inputPassword5"
                 className="form-control p-3 sign-up-form border-0"
                 aria-describedby="passwordHelpBlock"
-                placeholder=""
+                placeholder="Password"
+                required=""
+                data-msg="Please enter your password"
+                value={formData.password}
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    password: e.target.value,
+                  })
+                }
               />
             </div>
           </div>
+          <div className="mb-3">
+            <div className="row text-center">
+              <div className="col-12">{error ? errorDiv : null}</div>
+            </div>
+          </div>
           {/*<!-- submit button -->*/}
-          <div className="d-grid gap-2 pt-5 col-11 col-md-8 col-lg-5 mx-auto mt-5">
+          <div className="d-grid gap-2 pt-5 col-11 col-md-8 col-lg-5 mx-auto mt-2">
             <button
               className="btn btn-primary border-0 rounded-pill p-3 fw-bold bg-black text-white"
-              type="button"
+              type="submit"
             >
               Sign up
             </button>

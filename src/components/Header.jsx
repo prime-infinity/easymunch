@@ -1,35 +1,62 @@
-import { Link, useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import Navbar from "react-bootstrap/Navbar";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import { useSelector } from "react-redux";
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Header() {
+  const authState = useSelector((state) => state.auth.auth);
+  let navigate = useNavigate();
   const location = useLocation();
+
+  const notLoggedAndNotIndex = () => {
+    return location.pathname === "/" || authState === null ? false : true;
+    //return true;
+  };
+
+  const toLogin = () => {
+    navigate("/login");
+  };
+
+  const toRest = () => {
+    navigate("/resturants");
+  };
+
+  const goHome = () => {
+    navigate("/");
+  };
+
   return (
-    <nav style={{ zIndex: "2", position: "relative" }}>
-      <div className="container-fluid">
-        <div className="row">
-          <div className="col-3 mt-1">
-            <Link to="/">
-              <img
-                src="images/easymunchlogopng1.png"
-                alt="headerlogo"
-                width="150px"
-                className="img-fluid ps-3 ps-lg-5 mt-1"
-              />
-            </Link>
-          </div>
-          <div className="col-md-7 col-5"></div>
-          <div className="col-md-1 col-3 pe-0 mt-3 mt-lg-0 ms-3 ms-md-5">
-            {location.pathname === "/" && (
-              <Link
-                to="/login"
-                className="btn w-100 rounded-pill mb-5 mb-md-2 mt-md-4 my-auto  bg-white"
-              >
-                <small>Sign In</small>
-              </Link>
+    <Navbar collapseOnSelect expand="lg">
+      <Container fluid className="mx-md-5">
+        <Navbar.Brand className="cur-pointer" onClick={goHome}>
+          Easy Munch
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#features"></Nav.Link>
+            <Nav.Link href="#pricing"></Nav.Link>
+          </Nav>
+          <Nav>
+            {/*<Nav.Link href="#deets">More deets</Nav.Link>
+            <Nav.Link href="#deets">More deets</Nav.Link>
+  <Nav.Link href="#deets">More deets</Nav.Link>*/}
+            {location.pathname !== "/resturants" && (
+              <Nav.Link onClick={toRest}>
+                <span className="btn rounded-pill bg-gr px-4">Resturants</span>
+              </Nav.Link>
             )}
-          </div>
-        </div>
-      </div>
-    </nav>
+            {notLoggedAndNotIndex() && (
+              <Nav.Link onClick={toLogin}>
+                <span className="btn rounded-pill bg-gr px-4">Sign In</span>
+              </Nav.Link>
+            )}
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
