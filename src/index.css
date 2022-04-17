@@ -170,3 +170,33 @@ a {
   font-size: 0.6rem;
   line-height: 20px;
 }
+.mobile-menu {
+  background-color: white;
+  color: black;
+  position: fixed;
+  right: 0%;
+  width: 55%;
+  height: 100%;
+  overflow-y: scroll;
+  padding-bottom: 20%;
+  z-index: 3;
+  top: 0%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.overlay {
+  position: fixed;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: black;
+  opacity: 0.4;
+}
+.sec-menu {
+  position: absolute;
+  width: 120%;
+  left: 0%;
+  top: 120%;
+  background-color: white;
+  border-radius: 10px;
+}
