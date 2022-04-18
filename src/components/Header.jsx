@@ -2,14 +2,17 @@ import { useLocation, useNavigate } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import MobileMenu from "../ui/MobileMenu";
 import { useEffect, useState } from "react";
 import Overlay from "../ui/Overlay";
+import { setAuth } from "../redux/silces/authSlice";
+import { removeFromLocal } from "../helpers/storage";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Header() {
   const authState = useSelector((state) => state.auth.auth);
+  const dispatch = useDispatch();
   const [mMenu, setMmenu] = useState(false);
   const [secMenu, setSecMenu] = useState(false);
   let navigate = useNavigate();
@@ -40,11 +43,15 @@ function Header() {
     if (authState !== null) {
       return false;
     }
+    if (location.pathname === "/login" || location.pathname === "/register") {
+      return false;
+    }
     return true;
   };
 
   const logout = () => {
-    console.log("is loging out");
+    dispatch(setAuth(null));
+    removeFromLocal();
   };
 
   useEffect(() => {

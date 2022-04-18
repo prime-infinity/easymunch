@@ -42,8 +42,8 @@ function Register() {
 
   return (
     <div>
-      <div className="container-fluid">
-        <div className="h3 fw-bold text-center mt-5">Sign Up</div>
+      <div className="container-fluid mb-5 pt-5 pb-5">
+        <div className="h3 fw-bold text-center mt-5 pb-5">Sign Up</div>
         <div className="p text-primary text-center mt-5">
           <span className="p-4 border-r-5px border">
             <img

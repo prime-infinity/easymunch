@@ -207,3 +207,6 @@ a {
   width: 100%;
   z-index: 3;
 }
+.sticky + .content {
+  padding-top: 102px;
+}

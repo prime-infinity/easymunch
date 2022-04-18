@@ -3,6 +3,15 @@ import { Link, useLocation } from "react-router-dom";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function MobileMenu({ toRest, logout }) {
+  const notShowSignIn = () => {
+    if (authState !== null) {
+      return false;
+    }
+    if (location.pathname === "/login" || location.pathname === "/register") {
+      return false;
+    }
+    return true;
+  };
   const location = useLocation();
   const authState = useSelector((state) => state.auth.auth);
   return (
@@ -18,12 +27,10 @@ function MobileMenu({ toRest, logout }) {
                   </span>
                 </li>
               )}
-              {!authState && (
+              {notShowSignIn() && (
                 <li className="pb-3">
                   <Link to="/login">
-                    <span className="btn rounded-pill bg-black w-100 text-white">
-                      Login
-                    </span>
+                    <span className="btn rounded-pill bg-gr w-100">Login</span>
                   </Link>
                 </li>
               )}
