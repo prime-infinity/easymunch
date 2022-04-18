@@ -4,7 +4,7 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import { useSelector } from "react-redux";
 import MobileMenu from "../ui/MobileMenu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Overlay from "../ui/Overlay";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -24,16 +24,6 @@ function Header() {
     secMenu ? setSecMenu(false) : setSecMenu(true);
   };
 
-  const notLoggedAndNotIndex = () => {
-    if (location.pathname === "/") {
-      return false;
-    }
-    if (authState !== null) {
-      return false;
-    }
-    return true;
-  };
-
   const toLogin = () => {
     navigate("/login");
   };
@@ -46,9 +36,33 @@ function Header() {
     navigate("/");
   };
 
+  const notShowSignIn = () => {
+    if (authState !== null) {
+      return false;
+    }
+    return true;
+  };
+
   const logout = () => {
     console.log("is loging out");
   };
+
+  useEffect(() => {
+    window.onscroll = function() {
+      myFunction();
+    };
+    var header = document.getElementById("myHeader");
+
+    var sticky = header.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+  }, []);
 
   return (
     <>
@@ -57,7 +71,7 @@ function Header() {
           <MobileMenu toRest={toRest} logout={logout} /> <Overlay />
         </>
       )}
-      <Navbar collapseOnSelect expand="lg border">
+      <Navbar collapseOnSelect expand="lg" id="myHeader" className="bg-white">
         <Container fluid className="mx-md-5">
           <Navbar.Brand className="cur-pointer" onClick={goHome}>
             Easy Munch
@@ -125,11 +139,7 @@ function Header() {
                   </span>
                 </Nav.Link>
               )}
-              {notLoggedAndNotIndex() && (
-                <Nav.Link onClick={toLogin}>
-                  <span className="btn rounded-pill bg-gr px-4">Sign In</span>
-                </Nav.Link>
-              )}
+
               {location.pathname === "/resturants" && (
                 <Nav.Link className="mx-3">
                   <input
@@ -219,6 +229,11 @@ function Header() {
                       </div>
                     </span>
                   )}
+                </Nav.Link>
+              )}
+              {notShowSignIn() && (
+                <Nav.Link onClick={toLogin}>
+                  <span className="btn rounded-pill bg-gr px-4">Sign In</span>
                 </Nav.Link>
               )}
             </Nav>

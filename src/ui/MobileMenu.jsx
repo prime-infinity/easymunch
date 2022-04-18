@@ -1,5 +1,5 @@
 import { useSelector } from "react-redux";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function MobileMenu({ toRest, logout }) {
@@ -16,6 +16,15 @@ function MobileMenu({ toRest, logout }) {
                   <span className="btn rounded-pill bg-black w-100 text-white">
                     {authState.name}
                   </span>
+                </li>
+              )}
+              {!authState && (
+                <li className="pb-3">
+                  <Link to="/login">
+                    <span className="btn rounded-pill bg-black w-100 text-white">
+                      Login
+                    </span>
+                  </Link>
                 </li>
               )}
               {location.pathname !== "/resturants" && (
