@@ -9,6 +9,7 @@ import Register from "./views/Register";
 import Resturants from "./views/Resturants";
 
 import Header from "./components/Header";
+import InResturant from "./views/InResturant";
 //import Footer from "./components/Footer";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/resturants" element={<Resturants />} />
+        <Route path="/in-resturant" element={<InResturant />} />
       </Routes>
       {/*<Footer />*/}
     </BrowserRouter>

@@ -1,6 +1,12 @@
 import Resturant from "../ui/Resturant";
+import { useNavigate } from "react-router-dom";
 
 function Resturants() {
+  let navigate = useNavigate();
+  const enterRest = () => {
+    navigate("/in-resturant");
+  };
+
   return (
     <section>
       <div className="container pt-5">
@@ -19,7 +25,7 @@ function Resturants() {
 
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14].map(
             (rest, index) => (
-              <Resturant key={index} />
+              <Resturant key={index} enterRest={enterRest} />
             )
           )}
         </div>

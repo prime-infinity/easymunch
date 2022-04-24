@@ -1,7 +1,7 @@
-function Resturant() {
+function Resturant({ enterRest }) {
   return (
     <div className="col-12 col-md-6 col-lg-3">
-      <div className="card border-0 p-2 cur-pointer">
+      <div className="card border-0 p-2 cur-pointer" onClick={enterRest}>
         <img src="images/road_runnerRes.png" alt="" className="img-fluid" />
         <div className="card-body px-0">
           <div className="row d-flex justify-content-between">
