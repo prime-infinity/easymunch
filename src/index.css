@@ -212,7 +212,7 @@ a {
 }
 .custom-modal {
   position: fixed;
-  top: 0;
+  top: 1%;
   left: 0;
   z-index: 1055;
   display: block;

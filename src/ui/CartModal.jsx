@@ -11,7 +11,7 @@ function CartModal({ closeModal }) {
         <div className="modal-dialog modal-xl" role="document">
           <div className="modal-content">
             {/**  modal cancel button */}
-            <div className="modal-head text-end pe-4 pt-3">
+            <div className="modal-head text-end">
               <button
                 type="button"
                 className="btn-close bg-white p-2 mt-1 rounded-circle"
