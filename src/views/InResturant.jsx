@@ -7,7 +7,7 @@ function InResturant() {
       <div className="container pt-5">
         {/** intro text */}
         <div className="row">
-          <div className="col-9 col-md-6 col-lg-4 mt-4 ms-md-3 ms-2 ms-lg-5">
+          <div className="col-9 col-md-6 col-lg-4 mt-4">
             <div className="h3 fw-bolder">WOODS BY ROAD RUNNERS</div>
             <div className="p">
               Continental cuisines, finger foods, cocktails, wines and spirits
@@ -16,7 +16,7 @@ function InResturant() {
         </div>
 
         {/** contacts */}
-        <div className="row ps-lg-5 ps-2 ps-md-3 ">
+        <div className="row ">
           {/** text web */}
           <div className="col-12 d-none d-md-block pt-2">
             <span>

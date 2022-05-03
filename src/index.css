@@ -222,3 +222,10 @@ a {
   overflow-y: auto;
   outline: 0;
 }
+#food-as-bg {
+  background-image: url(/public/images/unsplash_MqT0asuoIcU111.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 50vh;
+}
