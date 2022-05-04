@@ -29,7 +29,10 @@ function CartModal({ closeModal }) {
                   id="food-as-small"
                 >
                   <div className="row justify-content-center">
-                    <div className="col-11 pt-2 pt-md-5">
+                    <div
+                      className="col-11 pt-2 pt-md-5"
+                      style={{ position: "relative" }}
+                    >
                       <span className="h2 fw-bold">Carlitos way special</span>{" "}
                       <br />
                       <span className="p text-secondary">
@@ -174,6 +177,21 @@ function CartModal({ closeModal }) {
                           </tr>
                         </tbody>
                       </table>
+                      <div style={{ position: "absolute", width: "100%" }}>
+                        <div className="row add-to-cart">
+                          <div className="col-4">
+                            <span className="h3">+</span>
+                            <span className="h3">1</span>
+                            <span className="h3">-</span>
+                          </div>
+                          <div className="col-8 col-md-6">
+                            <button className="btn bg-black w-100 text-white add-to-cart-button border-r-5px">
+                              Add to cart
+                              <span>#90000</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

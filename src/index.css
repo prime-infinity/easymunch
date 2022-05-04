@@ -244,3 +244,9 @@ a {
     overflow-y: scroll;
   }
 }
+.add-to-cart {
+  position: fixed;
+  bottom: 5%;
+  width: 90%;
+  left: 5%;
+}
