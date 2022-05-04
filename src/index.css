@@ -227,5 +227,20 @@ a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  min-height: 50vh;
+  min-height: 90vh;
+}
+@media (max-width: 768px) {
+  #food-as-bg {
+    min-height: 30vh;
+  }
+}
+#food-as-small {
+  height: 90vh;
+  overflow-y: scroll;
+}
+@media (max-width: 768px) {
+  #food-as-small {
+    height: 65vh;
+    overflow-y: scroll;
+  }
 }
