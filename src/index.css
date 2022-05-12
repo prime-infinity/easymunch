@@ -272,7 +272,7 @@ a {
 .in-circle {
   background-color: #eee;
 }
-.carb-btn-fix {
+/*.carb-btn-fix {
   position: fixed;
   bottom: 2%;
   left: 9%;
@@ -283,4 +283,20 @@ a {
     left: 30%;
     width: 60%;
   }
+}*/
+.detail-quantity {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+}
+.sticky-button {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+}
+.modal-footer--sticky {
+  position: sticky;
+  bottom: 0;
+  background-color: inherit;
+  z-index: 1055;
 }

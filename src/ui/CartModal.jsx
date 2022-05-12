@@ -42,12 +42,63 @@ function CartModal({ closeModal }) {
                       className="col-11 pt-2 pt-md-5"
                       style={{ position: "relative" }}
                     >
-                      <span className="h2 fw-bold">Carlitos way special</span>{" "}
-                      <br />
-                      <span className="p text-secondary">
-                        Mashed potatoes with t-bone steak, lamb ribeye/beef
-                        ribeye/lamb chops/lamb ribs
-                      </span>{" "}
+                      <div
+                        style={
+                          {
+                            /*position: "fixed",
+                          width: "80%",*/
+                          }
+                        }
+                      >
+                        <span className="h2 fw-bold">Carlitos way special</span>{" "}
+                        <br />
+                        <span className="p text-secondary">
+                          Mashed potatoes with t-bone steak, lamb ribeye/beef
+                          ribeye/lamb chops/lamb ribs
+                        </span>{" "}
+                        <div className="sticky-button">
+                          <div className="row mt-4">
+                            <div className="col-6">
+                              <span className="fw-bold fs-18">Total</span>
+                              <span className="fs-14 text-secondary">
+                                (VAT included)
+                              </span>
+                            </div>
+                            <div className="col-6 text-end">
+                              <span className="fw-bold fs-18"># 9,000.00</span>
+                            </div>
+                          </div>
+                          <div className="input-group pb-4 pt-3 carb-btn-fix">
+                            <input
+                              className="form-control form-control-lg detail-quantity"
+                              name="items"
+                              type="number"
+                              value={qty}
+                              onChange={(e) => setQty(e.target.value)}
+                              style={{ maxWidth: "5rem", textAlign: "center" }}
+                            />
+                            <div className="flex-grow-1">
+                              <div className="d-grid h-100">
+                                <div>
+                                  <button
+                                    className="btn btn-success w-100 h-100"
+                                    type="button"
+                                    style={{
+                                      borderTopLeftRadius: "0px",
+                                      borderBottomLeftRadius: "0px",
+                                      backgroundColor: "black",
+                                      borderColor: "black",
+                                    }}
+                                  >
+                                    {" "}
+                                    <span className="fw-bold">ADD TO CART</span>
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                       <br /> <br />
                       <span className="bg-black text-white px-4 py-2 rounded">
                         select your options
@@ -187,33 +238,6 @@ function CartModal({ closeModal }) {
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                      <div className="input-group pb-4 pt-3 carb-btn-fix">
-                        <input
-                          className="form-control form-control-lg detail-quantity"
-                          name="items"
-                          type="number"
-                          value={qty}
-                          onChange={(e) => setQty(e.target.value)}
-                          style={{ maxWidth: "5rem", textAlign: "center" }}
-                        />
-                        <div className="flex-grow-1">
-                          <div className="d-grid h-100">
-                            <div>
-                              <button
-                                className="btn btn-dark btn-success w-100 h-100"
-                                type="button"
-                                style={{
-                                  borderTopLeftRadius: "0px",
-                                  borderBottomLeftRadius: "0px",
-                                }}
-                              >
-                                {" "}
-                                <span className="fw-bold">ADD TO CART</span>
-                              </button>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
