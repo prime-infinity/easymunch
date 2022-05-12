@@ -235,20 +235,35 @@ a {
   }
 }
 
-#food-as-bg > img {
+.cart-modal-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  border-top-left-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+}
+
+@media (min-width: 768px) {
+  .cart-modal-image {
+    border-top-right-radius: 0px;
+  }
 }
 
 #food-as-small {
   height: 90vh;
   overflow-y: scroll;
+  border-bottom-right-radius: 18px;
+  border-top-right-radius: 18px;
 }
 @media (max-width: 768px) {
   #food-as-small {
     height: 65vh;
     overflow-y: scroll;
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    border-top-right-radius: 0px;
   }
 }
 .add-to-cart {
@@ -299,4 +314,17 @@ a {
   bottom: 0;
   background-color: inherit;
   z-index: 1055;
+}
+.cart-close {
+  position: fixed;
+  background-color: white;
+  opacity: 0.8;
+}
+.cart-close:hover {
+  transition: 0.5s;
+  opacity: 1;
+}
+.cart-close:focus {
+  transition: 0.5s;
+  opacity: 1;
 }

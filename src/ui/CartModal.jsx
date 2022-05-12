@@ -15,22 +15,42 @@ function CartModal({ closeModal }) {
         <div className="modal-dialog modal-xl" role="document">
           <div className="modal-content">
             {/**  modal cancel button */}
-            {/*<div className="modal-header">
-              {/*<button
-                type="button"
-                className="btn-close bg-white p-2 mt-1 rounded-circle"
-                onClick={closeModal}
-              ></button>
-            </div>*/}
 
             <div className="modal-body py-0 px-0">
+              <button
+                type="button"
+                className="btn mt-3 cart-close rounded-pill"
+                onClick={closeModal}
+              >
+                <span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    style={{ width: "25px" }}
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M11 17l-5-5m0 0l5-5m-5 5h12"
+                    />
+                  </svg>
+                </span>
+                <span className="fw-bold">back</span>
+              </button>
               {/** modal body */}
               <div className="row">
                 <div
                   className="col-12 col-md-6 col-lg-4 ps-0 pe-0"
                   id="food-as-bg"
                 >
-                  <img src="/images/unsplash_MqT0asuoIcU111.png" alt="" />
+                  <img
+                    className="cart-modal-image"
+                    src="/images/unsplash_MqT0asuoIcU111.png"
+                    alt=""
+                  />
                 </div>
 
                 <div
