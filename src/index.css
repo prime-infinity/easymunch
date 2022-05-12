@@ -304,17 +304,7 @@ a {
   border-bottom: 2px solid black;
   border-left: 2px solid black;
 }
-.sticky-button {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
-}
-.modal-footer--sticky {
-  position: sticky;
-  bottom: 0;
-  background-color: inherit;
-  z-index: 1055;
-}
+
 .cart-close {
   position: fixed;
   background-color: white;
@@ -332,4 +322,8 @@ a {
 .cart-close:focus {
   transition: 0.5s;
   opacity: 1;
+}
+.cart-modal-options {
+  max-height: 20%;
+  overflow-y: auto;
 }
