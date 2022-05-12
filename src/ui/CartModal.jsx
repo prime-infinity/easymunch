@@ -38,7 +38,7 @@ function CartModal({ closeModal }) {
                     />
                   </svg>
                 </span>
-                <span className="fw-bold">back</span>
+                <span className="fw-bold pe-1">back</span>
               </button>
               {/** modal body */}
               <div className="row">

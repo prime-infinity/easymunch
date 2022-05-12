@@ -320,6 +320,11 @@ a {
   background-color: white;
   opacity: 0.8;
 }
+@media (max-width: 768px) {
+  .cart-close {
+    right: 5%;
+  }
+}
 .cart-close:hover {
   transition: 0.5s;
   opacity: 1;
