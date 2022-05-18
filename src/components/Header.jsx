@@ -8,6 +8,7 @@ import { useEffect, useState } from "react";
 import Overlay from "../ui/Overlay";
 import { setAuth } from "../redux/silces/authSlice";
 import { removeFromLocal } from "../helpers/storage";
+import CartModal from "../ui/CartModal";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Header() {
@@ -15,6 +16,7 @@ function Header() {
   const dispatch = useDispatch();
   const [mMenu, setMmenu] = useState(false);
   const [secMenu, setSecMenu] = useState(false);
+  const [cartModal, setCartModal]=useState(false)
   let navigate = useNavigate();
   const location = useLocation();
 
@@ -54,6 +56,10 @@ function Header() {
     removeFromLocal();
   };
 
+  const showCartModal = ()=>{
+    setCartModal(!cartModal)
+  }
+
   useEffect(() => {
     window.onscroll = function() {
       myFunction();
@@ -75,7 +81,12 @@ function Header() {
     <>
       {mMenu && (
         <>
-          <MobileMenu toRest={toRest} logout={logout} /> <Overlay />
+          <MobileMenu toRest={toRest} openCart={showCartModal} logout={logout} /> <Overlay />
+        </>
+      )}
+      {cartModal && (
+        <>
+          <CartModal closeModal={showCartModal}  /> <Overlay />
         </>
       )}
       <Navbar collapseOnSelect expand="lg" id="myHeader" className="bg-white">
@@ -157,7 +168,7 @@ function Header() {
                 </Nav.Link>
               )}
 
-              <Nav.Link className="my-auto mx-3">
+              <div onClick={showCartModal} className="my-auto mx-3" style={{padding: "0.5rem 1rem",cursor:"pointer"}}>
                 <div style={{ position: "relative" }}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -170,7 +181,7 @@ function Header() {
                   My cart
                   {/*<div className="navbar-icon-badge">3</div>*/}
                 </div>
-              </Nav.Link>
+              </div>
 
               {authState && (
                 <Nav.Link className="mx-3" style={{ position: "relative" }}>

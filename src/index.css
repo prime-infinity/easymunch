@@ -327,3 +327,14 @@ a {
   max-height: 20%;
   overflow-y: auto;
 }
+.small-cart-text {
+  font-size: 9px;
+  color: #c4c4c4;
+}
+.medium-cart-text {
+  font-size: 11px;
+  color: #7f7e7c;
+}
+.d-grid{
+  display: grid !important;
+}

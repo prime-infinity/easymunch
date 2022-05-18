@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
-function MobileMenu({ toRest, logout }) {
+function MobileMenu({ toRest, logout,openCart }) {
   const notShowSignIn = () => {
     if (authState !== null) {
       return false;
@@ -55,7 +55,7 @@ function MobileMenu({ toRest, logout }) {
                   </span>
                 </li>
               )}
-              <li className="py-3">
+              <li className="py-3" onClick={openCart}>
                 <span className="btn rounded-pill">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
