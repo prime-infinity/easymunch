@@ -85,10 +85,10 @@ function CartModal({closeModal}) {
                 style={{backgroundColor: "black"}}
               >
                 <span className="row">
-                  <div className="col text-uppercase" style={{fontSize: "15px"}}>
-                    CHECKOUT
+                  <div className="col" style={{fontSize: "20px"}}>
+                    checkout
                   </div>
-                  <div className="col fw-bold" style={{fontSize: "15px"}}>
+                  <div className="col fw-bold" style={{fontSize: "20px"}}>
                     ₦ 9,000.00
                   </div>
                 </span>
