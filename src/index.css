@@ -2,11 +2,18 @@ body {
   font-family: "Inter", sans-serif;
 }
 .landingBg {
-  background-image: "url(images/bgup.png)";
-  background-size: "cover";
+  background-image: url("/public/images/bgup.png");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   min-height: 100vh;
+}
+.landingBgMobile {
+  background-image: url("/public/images/bgup.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 75vh;
 }
 
 .sign-up-form {
@@ -33,7 +40,7 @@ a {
       rgba(53, 53, 53, 0.729167) 61.98%,
       #000000 100%
     ),
-    "url(images/unsplash_VP5R-n47v9Q.png)";
+    url("/public/images/unsplash_VP5R-n47v9Q.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -48,7 +55,7 @@ a {
       rgba(53, 53, 53, 0.729167) 61.98%,
       #000000 100%
     ),
-    "url(images/unsplash_business.png)";
+    url("/public/images/unsplash_business.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -63,7 +70,7 @@ a {
       rgba(53, 53, 53, 0.729167) 61.98%,
       #000000 100%
     ),
-    "url(images/unsplash_costurmers.png)";
+    url("/public/images/unsplash_costurmers.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -79,7 +86,7 @@ a {
       rgba(44, 44, 44, 0.776042) 66.15%,
       #000000 100%
     ),
-    "url(images/unsplash_howitworks.png)";
+    url("/public/images/unsplash_howitworks.png");
 }
 .questionSegment {
   color: #7f7e7c;

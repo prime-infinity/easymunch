@@ -1,5 +1,13 @@
+import { useNavigate } from "react-router-dom"
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Become() {
+  let navigate = useNavigate()
+  const toBeVendor = ()=>{
+    console.log("yes");
+    navigate("/vendor")
+  }
+
   return (
     <section>
       <div className="container py-3">
@@ -7,7 +15,7 @@ function Become() {
         <div className="row d-md-flex d-none">
           <div className="col-4">
             <div className="card border-0">
-              <div className="card-body">
+              <div className="card-body cur-pointer" onClick={toBeVendor}>
                 <img
                   src="images/Become_a_vendor-compressed-min.jpg"
                   alt=""
@@ -68,7 +76,7 @@ function Become() {
               with ease.
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-6 cur-pointer" onClick={toBeVendor}>
             <img
               src="images/unsplash_cQbOSRpElxw.png"
               alt=""

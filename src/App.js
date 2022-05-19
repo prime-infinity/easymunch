@@ -10,6 +10,7 @@ import Resturants from "./views/Resturants";
 
 import Header from "./components/Header";
 import InResturant from "./views/InResturant";
+import BecomeVendor from "./views/BecomeVendor";
 //import Footer from "./components/Footer";
 
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/resturants" element={<Resturants />} />
         <Route path="/in-resturant" element={<InResturant />} />
+        <Route path="/vendor" element={<BecomeVendor />} />
       </Routes>
       {/*<Footer />*/}
     </BrowserRouter>
