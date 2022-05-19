@@ -4,7 +4,7 @@ function Partners() {
     <section>
       <div className="container py-3 my-3">
         <div className="row ">
-          <div className="col-lg-4 mt-2 col-12 col-md-5 pt-md-5 pt-lg-3">
+          <div className="col-lg-3 mt-2 col-12 col-md-5 pt-md-5 pt-lg-3">
             <div className="h1 col-9 col-lg-12 fw-bolder">
               Our Partner Restaurants
             </div>
@@ -23,7 +23,7 @@ function Partners() {
           {/*<!-- large screen carousel images -->*/}
           <div
             id="carouselExampleSlidesOnly"
-            className="carousel slide col-lg-8 d-none d-lg-flex ps-5"
+            className="carousel slide col-lg-9 d-none d-lg-flex ps-5"
             data-bs-ride="carousel"
           >
             <div className="carousel-inner">

@@ -343,6 +343,138 @@ function BecomeVendor() {
         </div>
       </div>
     </section>
+    <section>
+      <div className="container-fluid mt-5" style={{backgroundColor: "#040404"}}>
+        <div className="row pt-5 pt-lg-0 pb-lg-0 pb-5">
+          <div className="col-8 col-lg-4">
+            <div className="h3 mt-1 p-lg-5 text-white">
+              "EasyMunch extends our brand awareness to neighborhoods that
+              wouldn't normally be exposed to us."
+            </div>
+            <div className="h5 pt-2 pt-lg-5 ps-lg-5 text-white">
+              <small>Jason Doe</small>
+            </div>
+            <div className="h6 ps-lg-5 text-muted">
+              <small>Manager, Chicken Republic</small>
+            </div>
+          </div>
+          <div className="col-4 col-lg-8">
+            <img
+              src="images/unsplash_e5Q5vWO55uU.png"
+              alt=""
+              className="p-lg-5 img-fluid d-none d-lg-block"
+            />
+            <img
+              src="images/unsplash_e5Q5vWO55uUcropped.png"
+              alt=""
+              className="img-fluid d-lg-none"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div className="container-fluid px-md-5 px-3 mt-5">
+        <div className="row">
+          <div className="col-12 col-md-10">
+            <div className="h2 fw-bold">
+              How EasyMunch works <br />
+              in 3 simple steps
+            </div>
+          </div>
+          {/*<!-- carousel indicating steps -->*/}
+          <div
+            id="carouselExampleSlidesOnly"
+            className="carousel slide col-9 mt-3 d-none d-md-block"
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-inner">
+              <div className="carousel-item active" data-bs-interval="3000">
+                <img src="images/step_1.png" className="d-block w-100" alt="..." />
+              </div>
+              <div className="carousel-item" data-bs-interval="3000">
+                <img src="images/step_2.png" className="d-block w-100" alt="..." />
+              </div>
+              <div className="carousel-item" data-bs-interval="3000">
+                <img src="images/step_3.png" className="d-block w-100" alt="..." />
+              </div>
+            </div>
+          </div>
+          {/*<!-- mobile carousel steps -->*/}
+          <div
+            id="carouselExampleSlidesOnly"
+            className="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div className="carousel-inner d-md-none">
+              <div className="carousel-item active" data-bs-interval="3000">
+                <img
+                  src="images/step_1_mobile.png"
+                  className="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div className="carousel-item" data-bs-interval="3000">
+                <img
+                  src="images/step_2_mobile.png"
+                  className="d-block w-100"
+                  alt="..."
+                />
+              </div>
+              <div className="carousel-item" data-bs-interval="3000">
+                <img
+                  src="images/step_3_mobile.png"
+                  className="d-block w-100"
+                  alt="..."
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 px-md-5 mt-5">
+            <div className="h1 fw-bold">Questions? We've got answers.</div>
+          </div>
+          <div className="questions px-3 px-lg-5 pt-4">
+            <div className="h5 ps-md-5">
+              How long does it take to become a partner?
+            </div>
+            <div className="p px-md-5 questionSegment">
+              Depending on how many locations you have, it’s possible to become
+              an Uber Eats restaurant partner and start accepting orders in just
+              a few days! You can begin the process by signing up here. We’re
+              excited to hear from you!
+            </div>
+            <div className="h5 ps-md-5 pt-2 mt-4">How does pricing work?</div>
+            <div className="p px-md-5 questionSegment">
+              Easymunch offers professional photo shoot for the restaurants
+              meals free of charge. A service fee is calculated as a percentage
+              of each restaurant order made through Easymunch. Want more
+              details? Email us and we’ll get back to you.
+            </div>
+            <div className="h5 ps-md-5 mt-4">Who handles each delivery?</div>
+            <div className="p px-md-5 questionSegment">
+              The Easymunch platform can connect you with independent drivers
+              who deliver to your customers. Because of the network of delivery
+              people using the Easymunch platform, restaurants don’t have to
+              keep their own delivery staff. But if you do have your own staff,
+              we’re flexible—you can use them too. Reach out to us.
+            </div>
+            <div className="h5 ps-md-5 mt-4">What is the delivery radius?</div>
+            <div className="p px-md-5 questionSegment">
+              This varies from city to city. We can assess delivery coverage and
+              your location to help define the right area for your restaurant.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
         </>
     )
 }
