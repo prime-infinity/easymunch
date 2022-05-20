@@ -1,6 +1,6 @@
 function ReviewCard() {
   return (
-    <div className="col-10 col-md-4 col-lg-3">
+    <div className="col-7 col-md-4 col-lg-3">
       <div className="card border-2 border-r-5">
         <div className="card-body py-5">
           <h5 className="card-title">
