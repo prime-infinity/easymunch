@@ -6,7 +6,7 @@ function Reviews() {
       <div className="container py-3 my-3">
         <div className="row">
           <div className="col-12 pb-4">
-            <div className="h1 fw-bold col-lg-4 col-7">
+            <div className="font-boldest-second-biggest col-lg-4 col-7">
               What the Foodies say about us ☺️
             </div>
           </div>

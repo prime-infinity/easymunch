@@ -366,7 +366,7 @@ a {
 .btn-n-medium{
   height: 70px !important;
   border-radius: 10px !important;
-  padding: 0px 50px !important;
+  padding: 20px 50px !important;
   width: 241px !important;
 }
 @media (max-width: 768px) {
@@ -387,6 +387,18 @@ a {
     line-height: 44px;
   }
 }
+.font-boldest-second-biggest{
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+}
+@media (max-width: 768px) {
+  .font-boldest-second-biggest{ 
+    font-weight: 600;
+font-size: 30px;
+line-height: 40px;
+  }
+}
 .input-n-biggest{
   width: 100% !important;
   height: 70px !important;
@@ -404,4 +416,19 @@ a {
   .fs-24{ 
     font-size: 14px;
   }
+}
+.font-smallest{
+  font-weight: 300;
+font-size: 20px;
+line-height: 24px;
+}
+@media (max-width: 768px) {
+  .font-smallest{ 
+    font-weight: 300;
+font-size: 14px;
+line-height: 17px;
+  }
+}
+.br-theme{
+  border-radius: 10px !important;
 }

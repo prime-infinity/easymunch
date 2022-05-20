@@ -5,17 +5,16 @@ function Partners() {
       <div className="container py-3 my-3">
         <div className="row ">
           <div className="col-lg-3 mt-2 col-12 col-md-5 pt-md-5 pt-lg-3">
-            <div className="h1 col-9 col-lg-12 fw-bolder">
+            <div className="font-boldest-second-biggest col-9 col-lg-12">
               Our Partner Restaurants
             </div>
-            <div className="p">
-              We have partnered with some of the best restaurants in your city
-              to offer a wide variety of meals to suit your every mood!
+            <div className="font-smallest pt-3">
+            We have partnered with some of the best restaurants in your city to offer a wide variety of meals to suit your every mood!
             </div>
             {/*<!-- restaurant button web -->*/}
             <div className="d-grid d-none d-md-flex mt-3 pb-3 pb-md-0 mt-lg-5 gap-2 col-9">
-              <a className="btn btn-primary border-0  bg-black" type="button">
-                visit our restaurants
+              <a className="btn d-none d-md-block btn-n-medium text-white bg-black" type="button">
+                visit our resturants
               </a>
             </div>
           </div>
@@ -83,7 +82,7 @@ function Partners() {
           </div>
           {/*<!-- restaurant button -->*/}
           <div className=" col-12 d-md-none justify-content-center d-flex mt-3 pb-3 col-9">
-            <a className="btn text-white border-0  bg-black" type="button">
+            <a className="btn br-theme text-white w-100 py-3  bg-black" type="button">
               visit our restaurants
             </a>
           </div>
