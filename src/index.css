@@ -345,3 +345,63 @@ a {
 .d-grid{
   display: grid !important;
 }
+
+
+/* remodelling */
+#myHeader{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.bg-white-native{
+  transition: .5s ease;
+  background-color: white;
+}
+.btn-n-small{
+  padding: 13px 30px !important;
+  height: 51px !important;
+  background: #F7F7F7 !important;
+  border-radius: 10px !important;
+}
+.btn-n-medium{
+  height: 70px !important;
+  border-radius: 10px !important;
+  padding: 0px 50px !important;
+  width: 241px !important;
+}
+@media (max-width: 768px) {
+  .btn-n-medium{ 
+    height: 55px !important;
+    width: 148px !important;
+    padding: 15px 25px !important;
+  }
+}
+.font-boldest-biggest{
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 72px;
+}
+@media (max-width: 768px) {
+  .font-boldest-biggest{ 
+    font-size: 36px;
+    line-height: 44px;
+  }
+}
+.input-n-biggest{
+  width: 100% !important;
+  height: 70px !important;
+  border-radius: 10px !important;
+}
+@media (max-width: 768px) {
+  .input-n-biggest{ 
+    height: 55px !important;
+  }
+}
+.fs-24{
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .fs-24{ 
+    font-size: 14px;
+  }
+}

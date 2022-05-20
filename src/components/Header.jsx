@@ -65,14 +65,27 @@ function Header() {
       myFunction();
     };
     var header = document.getElementById("myHeader");
+    var logoText = document.getElementById("logo-text");
+    var logoCart = document.getElementById("logo-text2");
+    var menuB = document.getElementById("menu-burger");
 
     var sticky = header.offsetTop;
 
     function myFunction() {
       if (window.pageYOffset > sticky) {
-        header.classList.add("sticky");
+        header.classList.add("bg-white-native");
+        logoText.classList.add("text-dark")
+        logoText.classList.remove("text-white")
+        logoCart.classList.add("text-dark")
+        logoCart.classList.remove("text-white")
+        menuB.classList.add("text-dark")
+        menuB.classList.remove("text-white")
+        
       } else {
-        header.classList.remove("sticky");
+        header.classList.remove("bg-white-native");
+        logoText.classList.add("text-white")
+        logoCart.classList.add("text-white")
+        menuB.classList.add("text-white")
       }
     }
   }, []);
@@ -89,20 +102,21 @@ function Header() {
           <CartModal closeModal={showCartModal}  /> <Overlay />
         </>
       )}
-      <Navbar collapseOnSelect expand="lg" id="myHeader" className="bg-white">
-        <Container fluid className="mx-md-5">
+      <Navbar collapseOnSelect expand="lg" id="myHeader" className="pt-3 pt-md-1">
+        <Container fluid className="mx-md-5 mx-3">
           <Navbar.Brand className="cur-pointer" onClick={goHome}>
-            Easy Munch
+           <span id="logo-text" className="text-white">EasyMunch</span> 
           </Navbar.Brand>
           <span
-            className="d-block d-md-none"
+            id="menu-burger"
+            className="d-block d-md-none text-white"
             style={{ zIndex: "3" }}
             onClick={showMobileMenu}
           >
             {mMenu ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                style={{ width: "30px" }}
+                style={{ width: "26px" }}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -138,7 +152,7 @@ function Header() {
             <Nav>
               {location.pathname !== "/resturants" && (
                 <Nav.Link className="mx-3" onClick={toRest}>
-                  <span className="btn rounded-pill bg-gr px-4">
+                  <span className="btn btn-n-small  px-4">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="svg-icon me-2"
@@ -169,7 +183,7 @@ function Header() {
               )}
 
               <div onClick={showCartModal} className="my-auto mx-3" style={{padding: "0.5rem 1rem",cursor:"pointer"}}>
-                <div style={{ position: "relative" }}>
+                <div id="logo-text2" className="text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="svg-icon"
@@ -186,7 +200,7 @@ function Header() {
               {authState && (
                 <Nav.Link className="mx-3" style={{ position: "relative" }}>
                   <span
-                    className="btn rounded-pill bg-gr px-4"
+                    className="btn btn-n-small px-4"
                     onClick={showSecMenu}
                   >
                     <svg
@@ -251,7 +265,7 @@ function Header() {
               )}
               {notShowSignIn() && (
                 <Nav.Link onClick={toLogin}>
-                  <span className="btn rounded-pill bg-gr px-4">Sign In</span>
+                  <span className="btn btn-n-small px-4">Sign In</span>
                 </Nav.Link>
               )}
             </Nav>
