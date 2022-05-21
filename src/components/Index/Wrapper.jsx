@@ -22,7 +22,7 @@ function Wrapper() {
               className="pb-md-4 pb-lg-0 mt-md-2 mt-lg-0 text-white ps-lg-4 pt-4"
               
             >
-              <span className="p-1 fs-24" style={{ backgroundColor: "black" }}>
+              <span className="p-1 the-food" style={{ backgroundColor: "black" }}>
                 The food you love delivered with care.
               </span>
             </p>

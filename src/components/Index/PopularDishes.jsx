@@ -7,7 +7,7 @@ function PopularDishes() {
       <div className="container px-3 px-md-2 my-3 py-3">
         <div className="row justify-content-center">
           <div className="col-12">
-            <h3 className="fw-bold mb-4">Popular Dishes</h3>
+            <h3 className="fw-bold mb-4" style={{fontSize:"24px"}}>Popular Dishes</h3>
             <div
               className="row flex-nowrap example"
               style={{ overflowX: "scroll" }}

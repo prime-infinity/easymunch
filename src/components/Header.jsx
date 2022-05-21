@@ -9,20 +9,21 @@ import Overlay from "../ui/Overlay";
 import { setAuth } from "../redux/silces/authSlice";
 import { removeFromLocal } from "../helpers/storage";
 import CartModal from "../ui/CartModal";
+import { toggleMenu } from "../redux/silces/menuSlice";
+
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Header() {
   const authState = useSelector((state) => state.auth.auth);
   const dispatch = useDispatch();
-  const [mMenu, setMmenu] = useState(false);
+  const mMenu = useSelector((state) => state.menu.menu);
   const [secMenu, setSecMenu] = useState(false);
   const [cartModal, setCartModal]=useState(false)
   let navigate = useNavigate();
   const location = useLocation();
 
   const showMobileMenu = () => {
-    //show mobile menu
-    mMenu ? setMmenu(false) : setMmenu(true);
+    dispatch(toggleMenu());
   };
   const showSecMenu = () => {
     //show secondary  menu
@@ -92,11 +93,12 @@ function Header() {
 
   return (
     <>
-      {mMenu && (
+      
         <>
-          <MobileMenu toRest={toRest} openCart={showCartModal} logout={logout} /> <Overlay />
+          <MobileMenu toRest={toRest} openCart={showCartModal} logout={logout} />
+          <Overlay width={`35%`} closeOverlay={showMobileMenu}/>
         </>
-      )}
+    
       {cartModal && (
         <>
           <CartModal closeModal={showCartModal}  /> <Overlay />
@@ -131,7 +133,7 @@ function Header() {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                style={{ width: "30px" }}
+                style={{ width: "25px" }}
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -167,7 +169,7 @@ function Header() {
                         d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
                       />
                     </svg>
-                    Resturants
+                   <span className="fw-bold">Resturants</span> 
                   </span>
                 </Nav.Link>
               )}
@@ -177,7 +179,7 @@ function Header() {
                   <input
                     type="text"
                     placeholder="search"
-                    className="form-control rounded-pill bg-gr border-none"
+                    className="form-control input-n-medium bg-gr border-none"
                   />
                 </Nav.Link>
               )}
@@ -192,7 +194,7 @@ function Header() {
                   >
                     <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                   </svg>{" "}
-                  My cart
+                  <span className="fw-bold">My cart</span>
                   {/*<div className="navbar-icon-badge">3</div>*/}
                 </div>
               </div>
@@ -237,7 +239,7 @@ function Header() {
                                   clipRule="evenodd"
                                 />
                               </svg>
-                              <span>My Profile</span>
+                              <span className="fw-bold">My Profile</span>
                             </span>
                           </div>
                           <div className="" onClick={logout}>
@@ -254,7 +256,7 @@ function Header() {
                                   clipRule="evenodd"
                                 />
                               </svg>
-                              <span>Logout</span>
+                              <span className="fw-bold">Logout</span>
                             </span>
                           </div>
                         </div>
@@ -265,7 +267,7 @@ function Header() {
               )}
               {notShowSignIn() && (
                 <Nav.Link onClick={toLogin}>
-                  <span className="btn btn-n-small px-4">Sign In</span>
+                  <span className="btn btn-n-small px-4 fw-bold">Sign In</span>
                 </Nav.Link>
               )}
             </Nav>

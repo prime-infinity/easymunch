@@ -1,8 +1,13 @@
 import { useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
+import "animate.css";
+
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function MobileMenu({ toRest, logout,openCart }) {
+  const mMenu = useSelector((state) => state.menu.menu);
+
+
   const notShowSignIn = () => {
     if (authState !== null) {
       return false;
@@ -16,9 +21,13 @@ function MobileMenu({ toRest, logout,openCart }) {
   const authState = useSelector((state) => state.auth.auth);
   return (
     <>
-      <div className="mobile-menu">
+      <div className={`${
+          mMenu
+            ? "animate__animated animate__slideInRight"
+            : "animate__animated animate__slideOutRight"
+        } mobile-menu`}>
         <div className="pt-5 mt-5">
-          <div className="col-8 offset-2">
+          <div className="col-10 offset-1">
             <ul className="navbar-nav ml-auto">
               {authState && (
                 <li className="pb-3">
@@ -30,7 +39,7 @@ function MobileMenu({ toRest, logout,openCart }) {
               {notShowSignIn() && (
                 <li className="pb-3">
                   <Link to="/login">
-                    <span className="btn rounded-pill bg-gr w-100">Login</span>
+                    <span className="btn btn-n-small bg-gr w-100">Login</span>
                   </Link>
                 </li>
               )}

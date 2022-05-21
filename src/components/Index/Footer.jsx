@@ -3,7 +3,7 @@ function Footer() {
   return (
     <footer style={{ backgroundColor: "#f7f7f7" }}>
       <div className="container mt-5 py-md-3 py-lg-5 py-3">
-        <div className="row pt-5 pt-md-3 pb-3 ">
+        <div className="row pt-5 px-md-3 pt-md-3 pb-3 ">
           <div className="col-lg-6">
             <div className="row">
               <div className="col-6">
@@ -119,7 +119,7 @@ function Footer() {
             </div>
           </div>
         </div>
-        <div className="row px-3 pt-5 pt-lg-0 pb-3 px-lg-5">
+        <div className="row pt-5 pt-lg-0 pb-3 px-lg-3">
           <div className="col-12">
             <hr />
           </div>

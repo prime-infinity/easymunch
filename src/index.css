@@ -94,7 +94,7 @@ a {
 
 #bgLanding {
   height: 100vh;
-  background-image: url("/public/images/splash_image_edited.png");
+  background-image: url("/public/images/landingImgBg.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -182,11 +182,11 @@ a {
   color: black;
   position: fixed;
   right: 0%;
-  width: 55%;
+  width: 65%;
   height: 100%;
   overflow-y: scroll;
   padding-bottom: 20%;
-  z-index: 3;
+  z-index: 2;
   top: 0%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -409,6 +409,16 @@ line-height: 40px;
     height: 55px !important;
   }
 }
+.input-n-medium{
+  width: 100% !important;
+  height: 55px !important;
+  border-radius: 10px !important;
+}
+@media (max-width: 768px) {
+  .input-n-medium{ 
+    height: 55px !important;
+  }
+}
 .fs-24{
   font-size: 24px;
 }
@@ -422,13 +432,32 @@ line-height: 40px;
 font-size: 20px;
 line-height: 24px;
 }
+.the-food{
+  font-size: 24px;
+  padding: 5px;
+}
 @media (max-width: 768px) {
   .font-smallest{ 
     font-weight: 300;
-font-size: 14px;
-line-height: 17px;
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .the-food{
+    font-size: 16px;
   }
 }
 .br-theme{
   border-radius: 10px !important;
+}
+.animate__animated.animate__slideInRight {
+  --animate-duration: 0.2s;
+}
+.animate__animated.animate__slideOutRight {
+  --animate-duration: 0.2s;
+}
+.animate__animated.animate__slideInLeft {
+  --animate-duration: 0.1s;
+}
+.animate__animated.animate__slideOutLeft {
+  --animate-duration: 0.1s;
 }
