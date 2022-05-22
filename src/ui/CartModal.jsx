@@ -39,56 +39,79 @@ function CartModal({closeModal}) {
 
             {
             [1,2,3,4,5,6,7].map((item,index) => (
-              <div key={index} className="row">
-                <div className="col-8">
+              <div key={index} className="row mb-3">
+                <div className="col-12">
                 <div className="row">
-                  <div className="col-4 ps-0 pe-0">
-                    <img
+                  <div className="col-3 ps-0 pe-0">
+                    <img style={{height:"176px",objectFit:"cover"}}
                       src="/images/tome.png"
                       alt=""
-                      className="img-fluid"
+                      className="img-fluid br-theme"
                     />
                   </div>
-                  <div className="col-8 text-uppercase">
-                    <div className="h6 fw-bold mb-1" style={{fontSize: "12px"}}>
+                  <div className="col-9">
+                    <div className="fs-18 fw-bold mb-1">
                       Carlitos Way Special
                     </div>
-                    <p className="p small-cart-text mb-0 fw-bold">oPTIONS</p>
-                    <p className="medium-cart-text mb-0 fw-bold mb-3">
-                      chICKEN X cOKE X cUPCAKES
-                    </p>
-                    <p className="small-cart-text mb-0 fw-bold">extras</p>
-                    <p className="medium-cart-text fw-bold">
-                      sALAD X lARGE CHIPS X PLANTAIN (DICED)
-                    </p>
+                    <p className="p small-cart-text mb-0 fw-bold">Options</p>
+                    
+                    <ul className="sp-details ps-0 mb-1">
+                      <li>Chicken</li>
+                      <li>Coke</li>
+                      <li>Cupcakes</li>
+                      <li>Prime chicken</li>
+                      <li>Turi's special</li>
+                    </ul>
+
+                    <p className="small-cart-text mb-0 fw-bold">Extras</p>
+                    <ul className="sp-details ps-0 mb-1">
+                      <li>Salad</li>
+                      <li>Chips</li>
+                      <li>Mio Moi</li>
+                      
+                    </ul>
+                    <span className="fw-bold">#9,000.00</span>
                   </div>
                 </div>
+                
               </div>
-              <div className="col-4 pe-0">
-                <div
-                  className="p text-end fw-bold pe-4 mt-3"
-                  style={{fontSize: "10px"}}
-                >
-                  5X
+                <div className="col-12 mt-3">
+                  <div className="row">
+                    <div className="col-4">
+                      <div className="row">
+                        <div className="col-4 btn btn-just-color cur-pointer">
+                          <span className="fs-20">-</span>
+                        </div>
+                        <div className="col-4 my-auto px-n-2">
+                          <span className="fs-16">15</span>
+                        </div>
+                        <div className="col-4 btn btn-just-color cur-pointer">
+                            <span className="fs-20">+</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-4"></div>
+                    <div className="col-4 btn btn-just-color cur-pointer">
+                      <span className="text-danger ">delete</span>
+                    </div>
+                  </div>
                 </div>
-                <div className="h6 fw-bold text-end mt-5">₦ 9,000.00</div>
-              </div>
+                <hr className="mt-4" />
             </div>
             ))
             }
                   
             </div>
             <div className="d-flex justify-content-center">
-            <div className="d-grid col-10 ps-0 py-3">
+            <div className="d-grid col-12 ps-0 py-3">
               <button
-                className="btn rounded-pill text-white"
-                style={{backgroundColor: "black"}}
+                className="btn py-2 br-theme text-white bg-black"
               >
                 <span className="row">
-                  <div className="col" style={{fontSize: "20px"}}>
+                  <div className="col text-start" style={{fontSize: "20px"}}>
                     checkout
                   </div>
-                  <div className="col fw-bold" style={{fontSize: "20px"}}>
+                  <div className="col text-end my-auto fs-14">
                     ₦ 9,000.00
                   </div>
                 </span>
@@ -98,6 +121,7 @@ function CartModal({closeModal}) {
         </div>
       </div>
     </div>
+    <div className="overlay" onClick={closeModal}></div>
     </>
   );
 }

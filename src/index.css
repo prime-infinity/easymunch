@@ -335,7 +335,7 @@ a {
   overflow-y: auto;
 }
 .small-cart-text {
-  font-size: 9px;
+  font-size: 12px;
   color: #c4c4c4;
 }
 .medium-cart-text {
@@ -375,6 +375,10 @@ a {
     width: 148px !important;
     padding: 15px 25px !important;
   }
+}
+.btn-just-color{
+  background: #F7F7F7 !important;
+  border-radius: 10px;
 }
 .font-boldest-biggest{
   font-weight: 700;
@@ -458,6 +462,10 @@ line-height: 19px;
 }
 .br-theme{
   border-radius: 10px !important;
+}
+.px-n-2{
+  padding-left: 0.6rem !important;
+  padding-right: 0.8rem !important;
 }
 .animate__animated.animate__slideInRight {
   --animate-duration: 0.2s;

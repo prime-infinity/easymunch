@@ -101,7 +101,8 @@ function Header() {
     
       {cartModal && (
         <>
-          <CartModal closeModal={showCartModal}  /> <Overlay />
+          <CartModal closeModal={showCartModal}  />
+          
         </>
       )}
       <Navbar collapseOnSelect expand="lg" id="myHeader" className="pt-3 pt-md-1">
