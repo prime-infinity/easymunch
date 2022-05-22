@@ -14,13 +14,13 @@ function CartModal({closeModal}) {
       <div className="modal-dialog modal-md">
         <div className="modal-content px-3 py-2">
           <div className="header">
-            <div className="row mb-3">
-              <div className="col-11">
-                <h5 className="text-center ps-5 col-10" id="exampleModalLabe">
+            <div className="row mb-3 pt-2">
+              <div className="col-10 text-center">
+                {/*<h5 className="text-center ps-5 col-10" id="exampleModalLabe">
                   My Cart
-                </h5>
+                  </h5>*/}
               </div>
-              <div className="col-1">
+              <div className="col-2">
                 <button 
                 onClick={closeModal}
                   type="button"
