@@ -436,6 +436,11 @@ line-height: 24px;
   font-size: 24px;
   padding: 5px;
 }
+.fs-36-14{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+}
 @media (max-width: 768px) {
   .font-smallest{ 
     font-weight: 300;
@@ -444,6 +449,11 @@ line-height: 24px;
   }
   .the-food{
     font-size: 16px;
+  }
+  .fs-36-14{
+    font-weight: 700;
+font-size: 16px;
+line-height: 19px;
   }
 }
 .br-theme{
