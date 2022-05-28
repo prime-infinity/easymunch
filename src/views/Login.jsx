@@ -41,10 +41,10 @@ function Login() {
 
   return (
     <div>
-      <div className="container-fluid mb-5 pt-5 pb-5">
+      <div className="container-fluid pt-5">
         <div className="h3 fw-bold text-center mt-5 pt-5">Sign In</div>
         <div className="p text-primary text-center mt-5">
-          <span className="p-4 border-r-5px border">
+          <span className="p-4 bg-theme  br-theme border">
             <img
               src="images/flat-color-icons_google.png"
               alt=""
@@ -53,8 +53,26 @@ function Login() {
             Sign In With Google
           </span>
         </div>
+        {/*<!-- horizontal line with OR -->*/}
+        <div className="row d-flex justify-content-center mt-5">
+          <div className="col-11 col-md-8 col-lg-5">
+            <div className="row ms-3 pt-4">
+              <div className="col-5 ps-md-3 ps-0">
+                <hr />
+              </div>
+              <div className="col-1">
+                <p className="p mt-1 text-muted">
+                  <small>OR</small>
+                </p>
+              </div>
+              <div className="col-5 pe-md-3 pe-0">
+                <hr />
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="container">
+      <div className="container" style={{ minHeight: "100vh" }}>
         <form onSubmit={loginUser}>
           <div className="row d-flex justify-content-center my-4">
             <div className="col-11 col-md-8 col-lg-5">
@@ -63,7 +81,7 @@ function Login() {
               </label>
               <input
                 type="email"
-                className="form-control p-3 sign-up-form border-0"
+                className="form-control p-3 sign-up-form input-n-medium"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 value={formData.email}
@@ -83,7 +101,7 @@ function Login() {
               <input
                 type="password"
                 id="inputPassword5"
-                className="form-control p-3 sign-up-form border-0"
+                className="form-control p-3 sign-up-form input-n-medium"
                 aria-describedby="passwordHelpBlock"
                 placeholder="Password"
                 required=""
@@ -106,7 +124,7 @@ function Login() {
           {/*<!-- submit button -->*/}
           <div className="d-grid gap-2 col-11 col-md-8 pt-5 col-lg-5 mx-auto mt-2">
             <button
-              className="btn btn-primary border-0 rounded-pill p-3 fw-bold bg-black text-white"
+              className="btn btn-primary border-0 br-theme p-3 fw-bold bg-black text-white"
               type="submit"
             >
               Sign In

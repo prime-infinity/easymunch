@@ -109,9 +109,14 @@ a {
   font-weight: 900, bolder;
 }
 .restaurantCardText {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 400;
   color: #979797;
+}
+@media (min-width: 768px) {
+  .restaurantCardText {
+    font-size: 14px;
+  }
 }
 .rating-text {
   font-size: 11px;
@@ -363,6 +368,12 @@ a {
   background: #F7F7F7 !important;
   border-radius: 10px !important;
 }
+.bg-theme{
+  background: #F7F7F7 !important;
+}
+.text-theme{
+  color: #f7f7f7 !important;
+}
 .btn-n-medium{
   height: 70px !important;
   border-radius: 10px !important;
@@ -423,6 +434,10 @@ line-height: 40px;
     height: 55px !important;
   }
 }
+.input-n-search{
+  width: 40vw;
+  height: 48px;
+}
 .fs-24{
   font-size: 24px;
 }
@@ -466,6 +481,10 @@ line-height: 19px;
 .px-n-2{
   padding-left: 0.6rem !important;
   padding-right: 0.8rem !important;
+}
+.inrest-wrapper-image{
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .animate__animated.animate__slideInRight {
   --animate-duration: 0.2s;

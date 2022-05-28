@@ -7,17 +7,17 @@ function Resturant({ enterRest }) {
           <div className="row d-flex justify-content-between">
             <div className="col-10">
               <h6 className="card-title restaurantCardHeader fw-bold text-uppercase">
-                WOODS BY ROADRUNNERS
+                Woods by road runner
               </h6>
             </div>
             <div className="col-2 pe-2">
-              <p className="card-text rating-text text-uppercase">
+              <p className="card-text rating-text">
                 <span className="rounded-circle p-1 bg-gr">4.5</span>
               </p>
             </div>
           </div>
 
-          <p className="card-text restaurantCardText text-uppercase">
+          <p className="card-text restaurantCardText">
             Continental cuisines, finger foods, cocktails, wines and
           </p>
         </div>

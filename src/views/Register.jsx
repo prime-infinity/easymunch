@@ -42,10 +42,10 @@ function Register() {
 
   return (
     <div>
-      <div className="container-fluid mb-5 pt-5 pb-5">
+      <div className="container-fluid  pt-5 ">
         <div className="h3 fw-bold text-center mt-5 pb-5">Sign Up</div>
         <div className="p text-primary text-center mt-5">
-          <span className="p-4 border-r-5px border">
+          <span className="p-4 bg-theme br-theme">
             <img
               src="images/flat-color-icons_google.png"
               alt=""
@@ -74,7 +74,7 @@ function Register() {
         </div>
       </div>
       {/*<!-- inout group -->*/}
-      <div className="container mt-5 mb-5">
+      <div className="container mt-5 mb-5" style={{ minHeight: "100vh" }}>
         <form onSubmit={registerUser}>
           {/*<!-- name -->*/}
           <div className="row d-flex justify-content-center my-4">
@@ -84,7 +84,7 @@ function Register() {
               </label>
               <input
                 type="text"
-                className="form-control p-3 sign-up-form border-0"
+                className="form-control p-3 sign-up-form input-n-medium"
                 id="exampleInputName1"
                 value={formData.name}
                 onChange={(e) =>
@@ -101,7 +101,7 @@ function Register() {
               </label>
               <input
                 type="email"
-                className="form-control p-3 sign-up-form border-0"
+                className="form-control p-3 sign-up-form input-n-medium"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
                 value={formData.email}
@@ -119,7 +119,7 @@ function Register() {
               </label>
               <input
                 type="tel"
-                className="form-control p-3 sign-up-form border-0"
+                className="form-control p-3 sign-up-form input-n-medium"
                 id="exampleInputEmail1"
                 aria-describedby="emailHelp"
               />
@@ -134,7 +134,7 @@ function Register() {
               <input
                 type="password"
                 id="inputPassword5"
-                className="form-control p-3 sign-up-form border-0"
+                className="form-control p-3 sign-up-form input-n-medium"
                 aria-describedby="passwordHelpBlock"
                 placeholder="Password"
                 required=""
@@ -157,7 +157,7 @@ function Register() {
           {/*<!-- submit button -->*/}
           <div className="d-grid gap-2 pt-5 col-11 col-md-8 col-lg-5 mx-auto mt-2">
             <button
-              className="btn btn-primary border-0 rounded-pill p-3 fw-bold bg-black text-white"
+              className="btn btn-primary br-theme p-3 fw-bold bg-black text-white"
               type="submit"
             >
               Sign up

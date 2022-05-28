@@ -11,14 +11,13 @@ import { removeFromLocal } from "../helpers/storage";
 import CartModal from "../ui/CartModal";
 import { toggleMenu } from "../redux/silces/menuSlice";
 
-
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Header() {
   const authState = useSelector((state) => state.auth.auth);
   const dispatch = useDispatch();
   const mMenu = useSelector((state) => state.menu.menu);
   const [secMenu, setSecMenu] = useState(false);
-  const [cartModal, setCartModal]=useState(false)
+  const [cartModal, setCartModal] = useState(false);
   let navigate = useNavigate();
   const location = useLocation();
 
@@ -57,12 +56,12 @@ function Header() {
     removeFromLocal();
   };
 
-  const showCartModal = ()=>{
-    setCartModal(!cartModal)
-  }
+  const showCartModal = () => {
+    setCartModal(!cartModal);
+  };
 
   useEffect(() => {
-    window.onscroll = function() {
+    window.onscroll = function () {
       myFunction();
     };
     var header = document.getElementById("myHeader");
@@ -75,40 +74,44 @@ function Header() {
     function myFunction() {
       if (window.pageYOffset > sticky) {
         header.classList.add("bg-white-native");
-        logoText.classList.add("text-dark")
-        logoText.classList.remove("text-white")
-        logoCart.classList.add("text-dark")
-        logoCart.classList.remove("text-white")
-        menuB.classList.add("text-dark")
-        menuB.classList.remove("text-white")
-        
+        logoText.classList.add("text-dark");
+        logoText.classList.remove("text-white");
+        logoCart.classList.add("text-dark");
+        logoCart.classList.remove("text-white");
+        menuB.classList.add("text-dark");
+        menuB.classList.remove("text-white");
       } else {
         header.classList.remove("bg-white-native");
-        logoText.classList.add("text-white")
-        logoCart.classList.add("text-white")
-        menuB.classList.add("text-white")
+        logoText.classList.add("text-white");
+        logoCart.classList.add("text-white");
+        menuB.classList.add("text-white");
       }
     }
   }, []);
 
   return (
     <>
-      
-        <>
-          <MobileMenu toRest={toRest} openCart={showCartModal} logout={logout} />
-          <Overlay width={`35%`} closeOverlay={showMobileMenu}/>
-        </>
-    
+      <>
+        <MobileMenu toRest={toRest} openCart={showCartModal} logout={logout} />
+        <Overlay width={`35%`} closeOverlay={showMobileMenu} />
+      </>
+
       {cartModal && (
         <>
-          <CartModal closeModal={showCartModal}  />
-          
+          <CartModal closeModal={showCartModal} />
         </>
       )}
-      <Navbar collapseOnSelect expand="lg" id="myHeader" className="pt-3 pt-md-1">
+      <Navbar
+        collapseOnSelect
+        expand="lg"
+        id="myHeader"
+        className="pt-3 pt-md-1"
+      >
         <Container fluid className="mx-md-5 mx-3">
           <Navbar.Brand className="cur-pointer" onClick={goHome}>
-           <span id="logo-text" className="text-white">EasyMunch</span> 
+            <span id="logo-text" className="text-white">
+              EasyMunch
+            </span>
           </Navbar.Brand>
           <span
             id="menu-burger"
@@ -170,7 +173,7 @@ function Header() {
                         d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
                       />
                     </svg>
-                   <span className="fw-bold">Resturants</span> 
+                    <span className="fw-bold">Resturants</span>
                   </span>
                 </Nav.Link>
               )}
@@ -179,13 +182,17 @@ function Header() {
                 <Nav.Link className="mx-3">
                   <input
                     type="text"
-                    placeholder="search"
-                    className="form-control input-n-medium bg-gr border-none"
+                    placeholder="Resturants,Foods,Drinks"
+                    className="form-control input-n-search br-theme bg-theme border-none"
                   />
                 </Nav.Link>
               )}
 
-              <div onClick={showCartModal} className="my-auto mx-3" style={{padding: "0.5rem 1rem",cursor:"pointer"}}>
+              <div
+                onClick={showCartModal}
+                className="my-auto mx-3"
+                style={{ padding: "0.5rem 1rem", cursor: "pointer" }}
+              >
                 <div id="logo-text2" className="text-white">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -202,10 +209,7 @@ function Header() {
 
               {authState && (
                 <Nav.Link className="mx-3" style={{ position: "relative" }}>
-                  <span
-                    className="btn btn-n-small px-4"
-                    onClick={showSecMenu}
-                  >
+                  <span className="btn btn-n-small px-4" onClick={showSecMenu}>
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       className="svg-icon me-2"

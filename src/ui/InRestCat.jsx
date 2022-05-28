@@ -2,13 +2,12 @@
 function InRestCat() {
   return (
     <div className="col mt-2">
-      <a
-        className="btn text-capitalize rounded-pill px-5"
-        type="button"
-        style={{ backgroundColor: "#f7f7f7" }}
+      <button
+        className="btn w-100 fw-bold"
+        style={{ borderBottom: "2px solid black", borderRadius: "0px" }}
       >
-        Coke
-      </a>
+        coke
+      </button>
     </div>
   );
 }
