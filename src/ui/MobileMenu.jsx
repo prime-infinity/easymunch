@@ -1,13 +1,11 @@
 import { useSelector } from "react-redux";
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import "animate.css";
 
-
 /* eslint-disable jsx-a11y/anchor-is-valid */
-function MobileMenu({ toRest, logout,openCart }) {
+function MobileMenu({ toRest, logout, openCart }) {
   const mMenu = useSelector((state) => state.menu.menu);
-
-
+  const navigate = useNavigate();
   const notShowSignIn = () => {
     if (authState !== null) {
       return false;
@@ -19,13 +17,20 @@ function MobileMenu({ toRest, logout,openCart }) {
   };
   const location = useLocation();
   const authState = useSelector((state) => state.auth.auth);
+
+  const goToUserProfile = () => {
+    navigate("/user-dashboard");
+  };
+
   return (
     <>
-      <div className={`${
+      <div
+        className={`${
           mMenu
             ? "animate__animated animate__slideInRight"
             : "animate__animated animate__slideOutRight"
-        } mobile-menu`}>
+        } mobile-menu`}
+      >
         <div className="pt-5 mt-5">
           <div className="col-10 offset-1">
             <ul className="navbar-nav ml-auto">
@@ -78,7 +83,7 @@ function MobileMenu({ toRest, logout,openCart }) {
                 </span>
               </li>
               {authState && (
-                <li className="py-3">
+                <li className="py-3" onClick={goToUserProfile}>
                   <span className="btn rounded-pill">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"

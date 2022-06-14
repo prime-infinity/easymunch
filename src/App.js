@@ -11,6 +11,7 @@ import Resturants from "./views/Resturants";
 import Header from "./components/Header";
 import InResturant from "./views/InResturant";
 import BecomeVendor from "./views/BecomeVendor";
+import UserDashboard from "./views/UserDashboard";
 //import Footer from "./components/Footer";
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/resturants" element={<Resturants />} />
         <Route path="/in-resturant" element={<InResturant />} />
         <Route path="/vendor" element={<BecomeVendor />} />
+        <Route path="/user-dashboard" element={<UserDashboard />} />
       </Routes>
       {/*<Footer />*/}
     </BrowserRouter>
