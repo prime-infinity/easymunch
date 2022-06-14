@@ -18,6 +18,7 @@ body {
 
 .sign-up-form {
   background-color: #f7f7f7 !important;
+  border: none;
 }
 .example::-webkit-scrollbar {
   display: none;
@@ -260,6 +261,12 @@ a {
   width: 50%;
   /*left: 5%;*/
 }
+.fs-12{
+  font-size: 12px;
+}
+.fs-13{
+  font-size: 13px;
+}
 .fs-14 {
   font-size: 14px;
 }
@@ -476,4 +483,56 @@ line-height: 19px;
 }
 .animate__animated.animate__slideOutLeft {
   --animate-duration: 0.1s;
+}
+.address-div {
+  background-color: #F7F7F7;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+table {
+  border-collapse: collapse;
+  width: 1245px;
+}
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.table-div {
+  overflow-x: auto;
+}
+
+.profile-table-head {
+  background-color: #f7f7f7;
+  color: #7f7e7c;
+}
+.delivery-style {
+  background-color: #7b61ff33;
+  color: #7b61ff;
+  font-size: 9px;
+}
+.accepted-style {
+  background-color: #19ee9433;
+  color: #4caf50;
+  font-size: 9px;
+}
+.rejected-style {
+  background-color: #f21b3f33;
+  color: #f21b3f;
+  font-size: 9px;
+}
+.driver-assigned-style {
+  background-color: #c4c4c433;
+  color: #979797;
+  font-size: 9px;
+}
+.vendor-accepted-style {
+  background-color: #1976d233;
+  color: #1976d2;
+  font-size: 9px;
 }
