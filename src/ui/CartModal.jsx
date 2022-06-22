@@ -1,4 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 function CartModal({ closeModal }) {
+  let navigate = useNavigate();
+  const goToCheckout = () => {
+    closeModal();
+    navigate("/checkout");
+  };
+
   return (
     <>
       <div
@@ -98,7 +106,10 @@ function CartModal({ closeModal }) {
             </div>
             <div className="d-flex justify-content-center">
               <div className="d-grid col-12 ps-0 py-3">
-                <button className="btn py-2 br-theme text-white bg-black">
+                <button
+                  onClick={goToCheckout}
+                  className="btn py-2 br-theme text-white bg-black"
+                >
                   <span className="row">
                     <div
                       className="col text-start"

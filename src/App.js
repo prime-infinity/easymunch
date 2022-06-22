@@ -7,6 +7,7 @@ import Index from "./views/Index";
 import Login from "./views/Login";
 import Register from "./views/Register";
 import Resturants from "./views/Resturants";
+import Checkout from "./views/Checkout";
 
 import Header from "./components/Header";
 import InResturant from "./views/InResturant";
@@ -34,6 +35,7 @@ function App() {
         <Route path="/in-resturant" element={<InResturant />} />
         <Route path="/vendor" element={<BecomeVendor />} />
         <Route path="/user-dashboard" element={<UserDashboard />} />
+        <Route path="/checkout" element={<Checkout />} />
       </Routes>
       {/*<Footer />*/}
     </BrowserRouter>
