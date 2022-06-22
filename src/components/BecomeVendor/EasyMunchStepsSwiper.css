@@ -1,0 +1,163 @@
+/* ============================
+HOW EASY MUNCH WORKS BY SIR-RUMEH
+================================ */
+/* ============================
+SWIPER BEGINNING
+================================ */
+
+.main-swiper {
+	width: 1289px;
+	margin-top: 84px;
+}
+
+.swiper-content-container {
+	width: 1289px;
+	height: 467px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/* padding-left: 4rem; */
+	padding-right: 0rem;
+	background-color: white;
+}
+.swiper-content-image-container {
+	width: 622.67px;
+	height: 467px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: white;
+}
+.swiper-content-details-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	padding-top: 9%;
+	background-color: white;
+}
+@media (max-width: 768px) {
+	.main-swiper {
+		width: 100%;
+		margin-top: 34px;
+	}
+
+	.swiper-content-container {
+		flex-direction: column;
+		width: 100% !important;
+		height: 34rem;
+		padding-left: 0rem !important;
+	}
+	.swiper-content-container img {
+		max-width: 100%;
+	}
+	.swiper-content-image-container {
+		max-width: 100%;
+	}
+	.swiper-content-details-container {
+		width: 100%;
+		padding-top: 0rem;
+		padding-right: 2rem;
+	}
+}
+@media (max-width: 992px) {
+	.swiper-content-container {
+		height: 41rem;
+	}
+}
+
+/* Custom Swiper Nav */
+
+.custom-swiper-nav-container {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	/* transform: translateY(50%); */
+	top: 60%;
+	right: 28.7%;
+}
+.custom-swiper-nav-prev,
+.custom-swiper-nav-next {
+	width: 116px;
+	height: 55px;
+	z-index: 13;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.custom-swiper-nav-prev {
+	/* left: 0; */
+	background-image: url("./swiperImages/Frame\ 429back-button.png");
+	margin-right: 15px;
+	display: none;
+	opacity: 0;
+	transition: all 1.5s ease;
+}
+
+.custom-swiper-nav-next {
+	/* right: 0; */
+	background-image: url("./swiperImages/Frame\ 428next-button.png");
+	transform: translateX(-112%);
+	transition: all 1s ease;
+}
+
+.show-prev-nav-on-init {
+	display: inline-block;
+	opacity: 100%;
+	transition: all 1.5s ease;
+}
+.hide-next-nav-on-last {
+	display: none;
+	opacity: 0;
+	transition: all 1.5s ease;
+}
+.translate-next-nav-on-init {
+	transform: translateX(0%);
+}
+.translate-prev-nav-on-last {
+	transform: translateX(-112%);
+	transition: all 1s ease;
+}
+.test {
+	transition: all 0s ease;
+}
+
+@media (max-width: 768px) {
+	.custom-swiper-nav-container {
+		top: 87%;
+		left: 13.7%;
+	}
+
+	.custom-swiper-nav-next {
+		/* right: 0; */
+		transform: translateX(20%);
+	}
+	.translate-next-nav-on-init {
+		transform: translateX(60%);
+	}
+	.translate-prev-nav-on-last {
+		transform: translateX(20%);
+	}
+}
+
+@media (max-width: 992px) {
+	.custom-swiper-nav-container {
+		top: 92%;
+		left: 7%;
+	}
+	.custom-swiper-nav-next {
+		/* right: 0; */
+		transform: translateX(0%);
+	}
+	.translate-prev-nav-on-last {
+		transform: translateX(0%);
+	}
+}
+
+/* ============================
+   CUSTOM SWIPER ARROW END
+================================ */
