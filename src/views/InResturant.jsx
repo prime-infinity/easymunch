@@ -44,7 +44,7 @@ function InResturant() {
       <div className="container">
         {/** category buttons */}
         <div
-          className="row py-3 mt-md-3  flex-nowrap example"
+          className="row py-3 mt-md-3  flex-nowrap "
           style={{ overflowX: "scroll" }}
         >
           {[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((rest, index) => (
