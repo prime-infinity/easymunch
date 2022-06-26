@@ -4,45 +4,31 @@ function Checkout() {
 	return (
 		<div class="container-fluid w-lg-100">
 			<div class="row d-block d-lg-flex upper-div">
-				<div
-					class="col-12 col-lg-6 example ps-3 pr-0 pr-lg-3 flex-nowrap"
-					style="overflow-y: scroll; height: 100vh"
-				>
+				<div class="col-12 col-lg-6 example ps-3 pr-0 pr-lg-3 flex-nowrap">
 					<div class="d-flex w-30 w-lg-100 justify-content-between justify-content-lg-start align-items-center">
 						<div class="d-flex d-lg-none align-items-center">
 							<img
 								src="./Assets/check-out-icon.png"
 								alt=""
-								class="me-3"
-								style="height: 35%"
+								class="me-3 check-out-icon"
 							/>
 							<img
 								src="./Assets/check-out-font.png"
 								alt=""
-								style="height: 35%"
+								class="check-out-icon"
 							/>
 						</div>
 						<a
 							href="vendorPage.html"
-							class="mt-4 mb-3 w-30 w-lg-100 text-white py-2 btn"
-							style="
-								background-color: black;
-								font-size: 12px;
-							"
+							class="mt-4 mb-3 w-30 w-lg-100 text-white py-2 btn link-to-vendor"
 						>
 							Continue Shoping
 						</a>
 					</div>
-					<h3
-						class="text-uppercase mb-0 translate-right w-50"
-						style="font-weight: 800"
-					>
+					<h3 class="text-uppercase mb-0 translate-right w-50 woods-by-road">
 						Woods By Road Runners
 					</h3>
-					<p
-						class="translate-right location"
-						style="color: #979797; font-size: 14px"
-					>
+					<p class="translate-right location">
 						<img
 							src="./Assets/Vector location.png"
 							width="11px"
@@ -53,21 +39,15 @@ function Checkout() {
 						</span>
 					</p>
 					{/* <!-- pick up and delivery  --> */}
-					<div
-						class="mt-4 mb-3 p-0 col-8 rounded-pill fw-bold d-grid delivery"
-						style="background-color: #f7f7f7"
-					>
+					<div class="mt-4 mb-3 p-0 col-8 rounded-pill fw-bold d-grid delivery">
 						<div class="row p-1 ps-3">
-							<div
-								class="col-6 py-1 text-center rounded-pill"
-								style="background-color: white"
-							>
-								<a href="" style="color: black">
+							<div class="col-6 py-1 text-center rounded-pill delivery-container">
+								<a href="/" class="delivery">
 									Delivery
 								</a>
 							</div>
-							<div class="col-6 text-center py-1">
-								<a href="" style="color: black">
+							<div class="col-6 text-center py-1 ">
+								<a href="/" class="pick-up">
 									Pick-Up
 								</a>
 							</div>
@@ -102,7 +82,6 @@ function Checkout() {
 									class="form-control border-0 text-area"
 									id="exampleFormControlTextarea1"
 									rows="5"
-									style="background-color: #f7f7f7"
 									placeholder="leave instructions for delivery..."
 								></textarea>
 							</div>
@@ -111,10 +90,7 @@ function Checkout() {
 
 					{/* <!-- your order --> */}
 					<div class="row ps-2 pt-2">
-						<div
-							class="p text-capitalize fw-bold ps-0"
-							style="font-size: 20px"
-						>
+						<div class="p text-capitalize fw-bold ps-0 your-order">
 							your order
 						</div>
 						<div class="col-6 pt-4">
@@ -127,10 +103,7 @@ function Checkout() {
 									/>
 								</div>
 								<div class="col-8 text-uppercase">
-									<div
-										class="h6 fw-bold mb-1"
-										style="font-size: 14px"
-									>
+									<div class="h6 fw-bold mb-1 special">
 										Carlitos Way Special
 									</div>
 									<p class="p small-cart-text mb-0 fw-bold">
@@ -150,10 +123,7 @@ function Checkout() {
 							</div>
 						</div>
 						<div class="col-3">
-							<div
-								class="p text-end pe-5 ps-2 fw-bold pe-0 mt-5"
-								style="font-size: 12px"
-							>
+							<div class="p text-end pe-5 ps-2 fw-bold pe-0 mt-5 numbers">
 								5X
 							</div>
 						</div>
@@ -170,10 +140,7 @@ function Checkout() {
 									/>
 								</div>
 								<div class="col-8 text-uppercase">
-									<div
-										class="h6 fw-bold mb-1"
-										style="font-size: 14px"
-									>
+									<div class="h6 fw-bold mb-1 special">
 										Carlitos Way Special
 									</div>
 									<p class="p small-cart-text mb-0 fw-bold">
@@ -193,10 +160,7 @@ function Checkout() {
 							</div>
 						</div>
 						<div class="col-3">
-							<div
-								class="p text-end pe-5 ps-2 fw-bold pe-0 mt-5"
-								style="font-size: 12px"
-							>
+							<div class="p text-end pe-5 ps-2 fw-bold pe-0 mt-5 numbers">
 								5X
 							</div>
 						</div>
@@ -204,56 +168,30 @@ function Checkout() {
 				</div>
 
 				{/* <!-- static column --> */}
-				<div
-					class="col-12 col-lg-6 ps-5 pt-5 pe-5 example-2"
-					style="background-color: #e9e9e9; height: 100vh"
-				>
+				<div class="col-12 col-lg-6 ps-5 pt-5 pe-5 example-2 breakdown">
 					<h5 class="h5 fw-bold mt-4">Order Breakdown</h5>
 					<div class="row pb-5 me-5 pe-5">
 						<div class="col-12 pt-3 d-flex justify-content-between">
 							<span>Subtotal</span>
-							<span
-								style="
-									font-size: 15px;
-									font-weight: 600;
-								"
-							>
-								₦ 9,000.00
-							</span>
+							<span class="subtotal">₦ 9,000.00</span>
 						</div>
 
 						<div class="col-12 pt-3 d-flex justify-content-between">
 							<span>Taxes & Fees</span>
-							<span
-								style="
-									font-size: 15px;
-									font-weight: 600;
-								"
-							>
-								₦ 9,000.00
-							</span>
+							<span class="fees">₦ 9,000.00</span>
 						</div>
 
 						<div class="col-12 pb-5 pt-3 d-flex justify-content-between">
 							<span>Delivery Charge</span>
-							<span
-								style="
-									font-size: 15px;
-									font-weight: 600;
-								"
-							>
-								₦ 9,000.00
-							</span>
+							<span class="delivery">₦ 9,000.00</span>
 						</div>
 
 						{/* <!-- horizontal rule--> */}
 						<hr />
 
 						<div class="col-12 fw-bold d-flex justify-content-between">
-							<span style="font-size: 19px">Total</span>
-							<span style="font-size: 19px">
-								₦ 9,000.00
-							</span>
+							<span class="total">Total</span>
+							<span class="total-unit">₦ 9,000.00</span>
 						</div>
 					</div>
 
@@ -279,10 +217,10 @@ function Checkout() {
 						</div>
 
 						<a
-							href="#"
+							href="/"
 							class="mt-2 d-grid fw-bold py-2 col-12 btn place-order-input"
 						>
-							<span style="font-size: 16px">
+							<span class="cash">
 								<img
 									src="./Assets/cash-pay.svg"
 									class="mb-1"
@@ -293,10 +231,10 @@ function Checkout() {
 						</a>
 
 						<a
-							href="#"
+							href="/"
 							class="mt-2 d-grid fw-bold py-2 col-12 btn place-order-input"
 						>
-							<span style="font-size: 16px">
+							<span class="pay">
 								<img
 									src="./Assets/card-pay.svg"
 									class="mb-1"
@@ -306,13 +244,13 @@ function Checkout() {
 							</span>
 						</a>
 
-						<div class="p mt-1" style="font-size: 11px">
+						<div class="p mt-1 policy">
 							By Placing an order you agree with EasyMunch
 							Ltd user
 							<a href="termsAndCondition.html">
 								Terms & Conditions
 							</a>
-							as well as our <a href="">Refund policy</a>.
+							as well as our <a href="/">Refund policy</a>.
 						</div>
 					</form>
 				</div>
