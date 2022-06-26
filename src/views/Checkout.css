@@ -1,0 +1,65 @@
+/* Text Area */
+.text-area {
+	width: 100%;
+	background-color: #f7f7f7;
+}
+.example {
+	overflow-y: scroll;
+	height: 100vh;
+}
+.check-out-icon {
+	height: 35%;
+}
+.link-to-vendor {
+	background-color: black;
+	font-size: 12px;
+}
+.woods-by-road {
+	font-weight: 800;
+}
+.location {
+	color: #979797;
+	font-size: 14px;
+}
+.delivery {
+	background-color: #f7f7f7;
+}
+.delivery-container {
+	background-color: white;
+}
+
+.delivery,
+.pick-up {
+	color: black;
+}
+
+.your-order {
+	font-size: 20px;
+}
+.special {
+	font-size: 14px;
+}
+
+.numbers {
+	font-size: 12px;
+}
+.breakdown {
+	background-color: #e9e9e9;
+	height: 100vh;
+}
+.subtotal,
+.fees,
+.delivery {
+	font-size: 15px;
+	font-weight: 600;
+}
+.total {
+	font-size: 19px;
+}
+.cash,
+.pay {
+	font-size: 16px;
+}
+.policy {
+	font-size: 11px;
+}
