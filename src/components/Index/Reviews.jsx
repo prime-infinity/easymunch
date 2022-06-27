@@ -15,10 +15,7 @@ function Reviews() {
         {/* review cards */}
         <div className="row justify-content-center pb-md-5">
           <div className="col-12">
-            <div
-              className="row example flex-nowrap"
-              style={{ overflowX: "scroll" }}
-            >
+            <div className="row flex-nowrap" style={{ overflowX: "scroll" }}>
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
                 <ReviewCard key={index} item={item} />
               ))}

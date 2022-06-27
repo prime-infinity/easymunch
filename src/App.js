@@ -13,6 +13,8 @@ import Header from "./components/Header";
 import InResturant from "./views/InResturant";
 import BecomeVendor from "./views/BecomeVendor";
 import UserDashboard from "./views/UserDashboard";
+import Vendor from "./components/vendor/Vendor";
+import VendorOrders from "./components/vendor/routes/VendorOrders";
 //import Footer from "./components/Footer";
 
 function App() {
@@ -36,6 +38,9 @@ function App() {
         <Route path="/vendor" element={<BecomeVendor />} />
         <Route path="/user-dashboard" element={<UserDashboard />} />
         <Route path="/checkout" element={<Checkout />} />
+        <Route path="/vendor-dashboard" element={<Vendor />}>
+          <Route index element={<VendorOrders />} />
+        </Route>
       </Routes>
       {/*<Footer />*/}
     </BrowserRouter>
