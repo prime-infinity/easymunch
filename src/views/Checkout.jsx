@@ -60,7 +60,7 @@ function Checkout() {
           </div>
 
           {/* <!-- comment section --> */}
-          <div className="row me-0 me-lg-5 pt-3">
+          <div className="row  pt-3">
             <div className="col-12 col-lg-9">
               <div className="mb-3">
                 <label
@@ -164,6 +164,9 @@ function Checkout() {
         </div>
 
         {/* <!-- static column --> */}
+        <div className="row justify-content-center">
+          <div className="col-12">this</div>
+        </div>
         <div className="col-12 col-lg-6 ps-5 pt-5 pe-5 example-2 breakdown">
           <h5 className="h5 fw-bold mt-4">Order Breakdown</h5>
           <div className="row pb-5 me-5 pe-5">
