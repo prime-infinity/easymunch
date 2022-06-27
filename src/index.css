@@ -536,3 +536,6 @@ tr:nth-child(even) {
   color: #1976d2;
   font-size: 9px;
 }
+.opacity-03{
+  opacity: 0.3;
+}

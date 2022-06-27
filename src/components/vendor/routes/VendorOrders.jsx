@@ -1,7 +1,7 @@
 function VendorOrders() {
   return (
     <div>
-      <span>orders</span>
+      <span></span>
     </div>
   );
 }
