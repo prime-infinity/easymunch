@@ -15,6 +15,7 @@ import BecomeVendor from "./views/BecomeVendor";
 import UserDashboard from "./views/UserDashboard";
 import Vendor from "./components/vendor/Vendor";
 import VendorOrders from "./components/vendor/routes/VendorOrders";
+import VendorMenu from "./components/vendor/routes/VendorMenu";
 //import Footer from "./components/Footer";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/vendor-dashboard" element={<Vendor />}>
           <Route index element={<VendorOrders />} />
+          <Route path="menu" element={<VendorMenu />} />
         </Route>
       </Routes>
       {/*<Footer />*/}
