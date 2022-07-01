@@ -1,5 +1,6 @@
 .testing {
 	/* background-color: blue; */
+
 	float: right;
 	position: absolute;
 	top: 95px;
@@ -12,6 +13,10 @@
 }
 .testing::-webkit-scrollbar {
 	width: 5px;
+}
+.testing-child {
+	/* background-color: red; */
+	min-width: 80rem;
 }
 
 .text-data {

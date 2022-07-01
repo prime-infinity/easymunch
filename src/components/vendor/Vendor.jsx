@@ -76,7 +76,6 @@ function Vendor() {
 							</div>
 						</div>
 					</div>
-					{/* i had to remove this outlet from the bottom where it originally was because i found that this is th position where it was able o display the desired contents in the desired location  */}
 				</div>
 			</div>
 			<Outlet />

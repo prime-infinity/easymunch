@@ -3,45 +3,51 @@ import { ChevronDown } from "./order-assets/icons";
 
 function VendorOrders() {
 	return (
-		<div className="col-10 d-none d-lg-block testing">
+		<div className="col-12 col-lg-10 d-lg-block testing">
 			<div
-				class=" flex-nowrap example"
+				className=" flex-nowrap example testing-child"
 				style={{ overflowX: "scroll" }}
 			>
-				<div class=" pt-5 px-md-5 ps-3 ">
+				<div className=" pt-5 px-md-5 ps-3 ">
 					{/*  */}
 					{/* FIRST TABLE */}
-					<table class="table" style={{}}>
-						<thead class="">
-							<tr class="">
+					<table className="table d-none d-lg-inline" style={{}}>
+						<thead className="">
+							<tr className="">
 								<th
 									scope="col"
-									class="border-0 py-3 col-2"
+									className="border-0 py-3 col-2"
 								>
 									Date from
 								</th>
 								<th
 									scope="col"
-									class="border-0 py-3 col-2"
+									className="border-0 py-3 col-2"
 								>
 									Date to
 								</th>
 								<th
 									scope="col"
-									class="border-0 py-3 col-2"
+									className="border-0 py-3 col-2"
 								>
 									Last Status
 								</th>
 								<th
 									scope="col"
-									class="border-0 py-3 col-2"
+									className="border-0 py-3 col-2"
 								>
 									Payment Status
 								</th>
-								<th scope="col" class="border-0 py-3">
+								<th
+									scope="col"
+									className="border-0 py-3"
+								>
 									Client
 								</th>
-								<th scope="col" class="border-0 py-3">
+								<th
+									scope="col"
+									className="border-0 py-3"
+								>
 									Driver
 								</th>
 							</tr>
@@ -50,7 +56,7 @@ function VendorOrders() {
 							{[1].map((item, index) => (
 								<tr key={index} className="">
 									<td
-										class="fs-14 "
+										className="fs-14 "
 										// style={{ maxWidth: "2rem" }}
 									>
 										<div className="text-data date-from">
@@ -61,7 +67,7 @@ function VendorOrders() {
 										</div>
 									</td>
 									<td
-										class="fs-14 "
+										className="fs-14 "
 										// style={{ maxWidth: "2rem" }}
 									>
 										<div className="text-data second">
@@ -72,7 +78,7 @@ function VendorOrders() {
 										</div>
 									</td>
 									<td
-										class="fs-14 "
+										className="fs-14 "
 										// style={{ maxWidth: "2rem" }}
 									>
 										<div className="text-data third">
@@ -85,7 +91,7 @@ function VendorOrders() {
 										</div>
 									</td>
 									<td
-										class="fs-14 "
+										className="fs-14 "
 										// style={{ maxWidth: "2rem" }}
 									>
 										<div className="text-data first">
@@ -96,7 +102,7 @@ function VendorOrders() {
 										</div>
 									</td>
 									<td
-										class="fs-14 "
+										className="fs-14 "
 										// style={{ maxWidth: "2rem" }}
 									>
 										<div className="text-data first">
@@ -107,7 +113,7 @@ function VendorOrders() {
 										</div>
 									</td>
 									<td
-										class="fs-14 "
+										className="fs-14 "
 										// style={{ maxWidth: "2rem" }}
 									>
 										<div className="text-data first">
@@ -124,9 +130,12 @@ function VendorOrders() {
 						</tbody>
 					</table>
 					{/*  */}
-					<th class="ps-3 py-3" scope="row">
+					<th
+						className="ps-3 py-3 d-none d-lg-block"
+						scope="row"
+					>
 						<span
-							class="text-white apply"
+							className="text-white apply"
 							style={{
 								fontSize: "12px",
 								fontWeight: "100",
@@ -139,43 +148,52 @@ function VendorOrders() {
 					{/*  */}
 
 					<table
-						class="table table-hover"
-						style={{ width: "100%" }}
+						className="table table-hover"
+						style={{
+							width: "100%",
+						}}
 					>
-						<thead class="profile-table-head">
-							<tr class="">
+						<thead
+							className="profile-table-head"
+							// HERE
+						>
+							<tr className="">
 								<th
 									scope="col"
-									class="border-0 py-3 ps-5 col-2"
+									className="border-0 py-3 ps-5 col-2"
 								>
 									ID
 								</th>
 								<th
 									scope="col"
-									class="border-0 py-3 col-2"
+									className="border-0 py-3 col-2"
 								>
 									Created
 								</th>
 								<th
-									scope="col"
-									class="border-0 py-3 col-2"
+									// scope="col"
+									className="border-0 py-3 col-2 text-nowrap table-row "
 								>
-									Time Slot
+									<div className="">Time Slot</div>
+								</th>
+
+								<th
+									// scope="col"
+									className="border-0 py-3 col-2 text-nowrap table-row "
+								>
+									<div className="">Action</div>
 								</th>
 								<th
-									scope="col"
-									class="border-0 py-3 col-2"
+									// scope="col"
+									className="border-0 py-3 col-2 text-nowrap table-row "
 								>
-									Action
-								</th>
-								<th scope="col" class="border-0 py-3">
-									Method
+									<div className="">Method</div>
 								</th>
 								<th
-									scope="col"
-									class="border-0 py-3 col-2"
+									// scope="col"
+									className="border-0 py-3 col-2 text-nowrap table-row "
 								>
-									Last Status
+									<div className="">Last Status</div>
 								</th>
 							</tr>
 						</thead>
@@ -187,9 +205,12 @@ function VendorOrders() {
 										verticalAlign: "middle",
 									}}
 								>
-									<th class="ps-3 py-3" scope="row">
+									<th
+										className="ps-3 py-3"
+										scope="row"
+									>
 										<span
-											class="id bg-dark text-white"
+											className="id bg-dark text-white"
 											style={{
 												fontSize: "8px",
 											}}
@@ -197,52 +218,64 @@ function VendorOrders() {
 											#ADX46V
 										</span>
 									</th>
-									<td class="py-4 fs-13">
+									<td className="py-4 fs-13">
 										Thurs, June 24, 2021 10:06 AM
 									</td>
-									<td class="py-4 fs-13">
-										10:40 AM - 11:20 AM
+									<td className="py-4 fs-13">
+										<div className="">
+											10:40 AM - 11:20 AM
+										</div>
 									</td>
 									<td
-										class="py-4 fs-13 fw-bold flex"
+										className="py-4 fs-13 fw-bold flex"
 										id="action"
 									>
-										<span
-											class="action text-white"
-											style={{
-												fontSize: "8px",
-												backgroundColor:
-													"#4CAF50",
-											}}
-										>
-											ACCEPT
-										</span>
-										<span
-											class="action text-white"
-											style={{
-												fontSize: "8px",
-												backgroundColor:
-													"#FF0A0A",
-											}}
-										>
-											REJECT
-										</span>
+										{" "}
+										<div className="">
+											<span
+												className="action text-white"
+												style={{
+													fontSize:
+														"8px",
+													backgroundColor:
+														"#4CAF50",
+												}}
+											>
+												ACCEPT
+											</span>
+											<span
+												className="action text-white"
+												style={{
+													fontSize:
+														"8px",
+													backgroundColor:
+														"#FF0A0A",
+												}}
+											>
+												REJECT
+											</span>
+										</div>
 									</td>
 
 									<td
-										class="py-3 "
+										className="py-3 "
 										style={{
 											verticalAlign: "center",
 										}}
 									>
-										<span class="delivery-style method-delivery">
-											Delivery
-										</span>
+										{" "}
+										<div className="">
+											<span className="delivery-style method-delivery">
+												Delivery
+											</span>
+										</div>
 									</td>
-									<td class="py-3 mt-3">
-										<span class="accepted-style status-accepted">
-											Accepted by Admin
-										</span>
+									<td className="py-3 mt-3">
+										<div className="">
+											<span className="accepted-style status-accepted">
+												Accepted by Admin
+											</span>
+										</div>
 									</td>
 								</tr>
 							))}
@@ -253,9 +286,12 @@ function VendorOrders() {
 										verticalAlign: "middle",
 									}}
 								>
-									<th class="ps-3 py-3" scope="row">
+									<th
+										className="ps-3 py-3"
+										scope="row"
+									>
 										<span
-											class="id bg-dark text-white"
+											className="id bg-dark text-white"
 											style={{
 												fontSize: "8px",
 											}}
@@ -263,42 +299,51 @@ function VendorOrders() {
 											#ADX46V
 										</span>
 									</th>
-									<td class="py-4 fs-13">
+									<td className="py-4 fs-13">
 										Thurs, June 24, 2021 10:06 AM
 									</td>
-									<td class="py-4 fs-13">
-										10:40 AM - 11:20 AM
+									<td className="py-4 fs-13">
+										<div className="">
+											10:40 AM - 11:20 AM
+										</div>
 									</td>
 									<td
-										class="py-4 fs-13 fw-bold flex"
+										className="py-4 fs-13 fw-bold flex"
 										id="action"
 									>
-										<span
-											class="action-prepared text-white"
-											style={{
-												fontSize: "8px",
-												backgroundColor:
-													"#1976D2",
-											}}
-										>
-											PREPARED
-										</span>
+										<div className="">
+											<span
+												className="action-prepared text-white"
+												style={{
+													fontSize:
+														"8px",
+													backgroundColor:
+														"#1976D2",
+												}}
+											>
+												PREPARED
+											</span>
+										</div>
 									</td>
 
 									<td
-										class="py-3 "
+										className="py-3 "
 										style={{
 											verticalAlign: "center",
 										}}
 									>
-										<span class="delivery-style method-delivery">
-											Pick-up
-										</span>
+										<div className="">
+											<span className="delivery-style method-delivery">
+												Pick-up
+											</span>
+										</div>
 									</td>
-									<td class="py-3 mt-3">
-										<span class=" status-rejected">
-											Rejected
-										</span>
+									<td className="py-3 mt-3">
+										<div className="">
+											<span className=" status-rejected">
+												Rejected
+											</span>
+										</div>
 									</td>
 								</tr>
 							))}
@@ -309,9 +354,12 @@ function VendorOrders() {
 										verticalAlign: "middle",
 									}}
 								>
-									<th class="ps-3 py-3" scope="row">
+									<th
+										className="ps-3 py-3"
+										scope="row"
+									>
 										<span
-											class="id bg-dark text-white"
+											className="id bg-dark text-white"
 											style={{
 												fontSize: "8px",
 											}}
@@ -319,33 +367,41 @@ function VendorOrders() {
 											#ADX46V
 										</span>
 									</th>
-									<td class="py-4 fs-13">
+									<td className="py-4 fs-13">
 										Thurs, June 24, 2021 10:06 AM
 									</td>
-									<td class="py-4 fs-13">
-										10:40 AM - 11:20 AM
+									<td className="py-4 fs-13">
+										<div className="">
+											10:40 AM - 11:20 AM
+										</div>
 									</td>
 									<td
-										class="py-4 fs-13  flex"
+										className="py-4 fs-13  flex"
 										id="action"
 									>
-										NO ACTIONS RIGHT NOW!
+										<div className="">
+											NO ACTIONS RIGHT NOW!
+										</div>
 									</td>
 
 									<td
-										class="py-3 "
+										className="py-3 "
 										style={{
 											verticalAlign: "center",
 										}}
 									>
-										<span class="delivery-style method-delivery">
-											Pick-up
-										</span>
+										<div className="">
+											<span className="delivery-style method-delivery">
+												Pick-up
+											</span>
+										</div>
 									</td>
-									<td class="py-3 mt-3">
-										<span class=" status-prepared">
-											Prepared
-										</span>
+									<td className="py-3 mt-3">
+										<div className="">
+											<span className=" status-prepared">
+												Prepared
+											</span>
+										</div>
 									</td>
 								</tr>
 							))}
@@ -356,7 +412,10 @@ function VendorOrders() {
 										verticalAlign: "middle",
 									}}
 								>
-									<th class="ps-3 py-3" scope="row">
+									<th
+										className="ps-3 py-3"
+										scope="row"
+									>
 										<span
 											class="id bg-dark text-white"
 											style={{
@@ -366,52 +425,62 @@ function VendorOrders() {
 											#ADX46V
 										</span>
 									</th>
-									<td class="py-4 fs-13">
+									<td className="py-4 fs-13">
 										Thurs, June 24, 2021 10:06 AM
 									</td>
-									<td class="py-4 fs-13">
-										10:40 AM - 11:20 AM
+									<td className="py-4 fs-13">
+										<div className="">
+											10:40 AM - 11:20 AM
+										</div>
 									</td>
 									<td
-										class="py-4 fs-13 fw-bold flex"
+										className="py-4 fs-13 fw-bold flex"
 										id="action"
 									>
-										<span
-											class="action text-white"
-											style={{
-												fontSize: "8px",
-												backgroundColor:
-													"#4CAF50",
-											}}
-										>
-											ACCEPT
-										</span>
-										<span
-											class="action text-white"
-											style={{
-												fontSize: "8px",
-												backgroundColor:
-													"#FF0A0A",
-											}}
-										>
-											REJECT
-										</span>
+										<div className="">
+											<span
+												className="action text-white"
+												style={{
+													fontSize:
+														"8px",
+													backgroundColor:
+														"#4CAF50",
+												}}
+											>
+												ACCEPT
+											</span>
+											<span
+												className="action text-white"
+												style={{
+													fontSize:
+														"8px",
+													backgroundColor:
+														"#FF0A0A",
+												}}
+											>
+												REJECT
+											</span>
+										</div>
 									</td>
 
 									<td
-										class="py-3 "
+										className="py-3 "
 										style={{
 											verticalAlign: "center",
 										}}
 									>
-										<span class="delivery-style method-delivery">
-											Delivery
-										</span>
+										<div className="">
+											<span className="delivery-style method-delivery">
+												Delivery
+											</span>
+										</div>
 									</td>
-									<td class="py-3 mt-3">
-										<span class="status-assigned">
-											Assigned to Driver
-										</span>
+									<td className="py-3 mt-3">
+										<div className="">
+											<span className="status-assigned">
+												Assigned to Driver
+											</span>
+										</div>
 									</td>
 								</tr>
 							))}
@@ -422,9 +491,12 @@ function VendorOrders() {
 										verticalAlign: "middle",
 									}}
 								>
-									<th class="ps-3 py-3" scope="row">
+									<th
+										className="ps-3 py-3"
+										scope="row"
+									>
 										<span
-											class="id bg-dark text-white"
+											className="id bg-dark text-white"
 											style={{
 												fontSize: "8px",
 											}}
@@ -432,33 +504,41 @@ function VendorOrders() {
 											#ADX46V
 										</span>
 									</th>
-									<td class="py-4 fs-13">
+									<td className="py-4 fs-13">
 										Thurs, June 24, 2021 10:06 AM
 									</td>
-									<td class="py-4 fs-13">
-										10:40 AM - 11:20 AM
+									<td className="py-4 fs-13">
+										<div className="">
+											10:40 AM - 11:20 AM
+										</div>
 									</td>
 									<td
-										class="py-4 fs-13  flex"
+										className="py-4 fs-13  flex"
 										id="action"
 									>
-										NO ACTIONS RIGHT NOW!
+										<div className="">
+											NO ACTIONS RIGHT NOW!
+										</div>
 									</td>
 
 									<td
-										class="py-3 "
+										className="py-3 "
 										style={{
 											verticalAlign: "center",
 										}}
 									>
-										<span class="delivery-style method-delivery">
-											Delivery
-										</span>
+										<div className="">
+											<span className="delivery-style method-delivery">
+												Delivery
+											</span>
+										</div>
 									</td>
-									<td class="py-3 mt-3">
-										<span class=" status-prepared">
-											Accepted by Vendor
-										</span>
+									<td className="py-3 mt-3">
+										<div className="">
+											<span className=" status-prepared">
+												Accepted by Vendor
+											</span>
+										</div>
 									</td>
 								</tr>
 							))}
