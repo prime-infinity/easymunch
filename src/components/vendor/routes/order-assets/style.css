@@ -1,0 +1,115 @@
+.testing {
+	/* background-color: blue; */
+
+	float: right;
+	position: absolute;
+	top: 95px;
+	/* top: 0; */
+	/* padding-top: 96px; */
+	right: 0;
+	max-height: 90%;
+	overflow-y: scroll;
+	scroll-behavior: smooth;
+}
+.testing::-webkit-scrollbar {
+	width: 5px;
+}
+.testing-child {
+	/* background-color: red; */
+	min-width: 80rem;
+}
+
+.text-data {
+	background-color: #f0f0f0 !important;
+	color: #7e7e7e !important;
+	border-radius: 8px;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.7rem;
+	/* background-color: red !important; */
+	width: auto;
+
+	/* display: flex; */
+	/* justify-content: space-between; */
+	/* min-width: 80% !important; */
+	/* margin-right: 1rem !important; */
+}
+
+.first {
+	width: 10rem;
+}
+
+.apply {
+	min-width: 7rem !important;
+	padding: 0.8rem 4rem;
+	background-color: black;
+}
+.id {
+	padding: 0.8rem 2rem;
+	border-radius: 8px;
+	font-size: 10px !important;
+}
+#action {
+	/* background-color: red !important; */
+	display: flex;
+	justify-content: space-between;
+}
+.action {
+	padding: 0.7rem 1.3rem;
+	border-radius: 8px;
+	font-size: 10px !important;
+}
+/* METHOD */
+.method-delivery {
+	padding: 0.7rem 1.3rem;
+	border-radius: 8px;
+	font-size: 14px !important;
+	font-weight: 600;
+}
+.method-pick-up {
+	padding: 0.7rem 1.3rem;
+	border-radius: 8px;
+	font-size: 14px !important;
+	font-weight: 600;
+}
+/* STATUS */
+.status-accepted {
+	padding: 0.7rem 1.3rem;
+	border-radius: 8px;
+	font-size: 14px !important;
+	font-weight: 600;
+}
+.status-rejected {
+	padding: 0.7rem 1.3rem;
+	border-radius: 8px;
+	font-size: 14px !important;
+	background-color: #fcd1d9;
+	color: #f33252;
+	font-weight: 600;
+}
+.action-prepared {
+	padding: 0.7rem 1.3rem;
+	border-radius: 8px;
+	font-size: 14px !important;
+	min-width: 100%;
+	text-align: center;
+	font-weight: 600;
+}
+.status-prepared {
+	padding: 0.7rem 1.3rem;
+	border-radius: 8px;
+	font-size: 14px !important;
+	min-width: 100%;
+	text-align: center;
+	background-color: #d1e4f6;
+	color: #4791db;
+	font-weight: 600;
+}
+.status-assigned {
+	padding: 0.7rem 1.3rem;
+	border-radius: 8px;
+	font-size: 14px !important;
+	background-color: rgba(128, 128, 128, 0.3);
+	opacity: 60%;
+	font-weight: 600;
+}
