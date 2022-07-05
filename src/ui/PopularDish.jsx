@@ -10,8 +10,8 @@ function PopularDish() {
             Italian Pasta
           </h5>
           <p className="card-text text-white text-center">12,456 &#11088;</p>
-          <p className="text-uppercase text-white">
-            <small>Mashed potatoes with T-bone steak...</small>
+          <p className="text-white fs-16">
+            Mashed potatoes with T-bone steak...
           </p>
           <div className="row py-2">
             <div className="col-6">

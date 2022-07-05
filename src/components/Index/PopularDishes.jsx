@@ -10,7 +10,10 @@ function PopularDishes() {
             <h3 className="fw-bold mb-4" style={{ fontSize: "24px" }}>
               Popular Dishes
             </h3>
-            <div className="row flex-nowrap " style={{ overflowX: "scroll" }}>
+            <div
+              className="row flex-nowrap no-scroll-bar"
+              style={{ overflowX: "scroll" }}
+            >
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((item, index) => (
                 <PopularDish key={index} item={item} />
               ))}

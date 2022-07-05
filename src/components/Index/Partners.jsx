@@ -1,5 +1,12 @@
+import { useNavigate } from "react-router-dom";
+
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Partners() {
+  let navigate = useNavigate();
+
+  const toRest = () => {
+    navigate("/resturants");
+  };
   return (
     <section>
       <div className="container py-3 my-3">
@@ -8,14 +15,19 @@ function Partners() {
             <div className="font-boldest-second-biggest col-9 col-lg-12">
               Our Partner Restaurants
             </div>
-            <div className="font-smallest pt-3">
-            We have partnered with some of the best restaurants in your city to offer a wide variety of meals to suit your every mood!
+            <div className="fs-14 pt-3">
+              We have partnered with some of the best restaurants in your city
+              to offer a wide variety of meals to suit your every mood!
             </div>
             {/*<!-- restaurant button web -->*/}
-            <div className="d-grid d-none d-md-flex mt-3 pb-3 pb-md-0 mt-lg-5 gap-2 col-9">
-              <a className="btn d-none d-md-block btn-n-medium text-white bg-black" type="button">
-                visit our resturants
-              </a>
+            <div className="d-none d-md-block mt-3 pb-3 mt-lg-5">
+              <button
+                onClick={toRest}
+                className="btn w-100 d-none  d-md-block py-3 px-4 text-white bg-black"
+                type="button"
+              >
+                view resturants
+              </button>
             </div>
           </div>
 
@@ -82,8 +94,12 @@ function Partners() {
           </div>
           {/*<!-- restaurant button -->*/}
           <div className=" col-12 d-md-none justify-content-center d-flex mt-3 pb-3 col-9">
-            <a className="btn br-theme text-white w-100 py-3  bg-black" type="button">
-              visit our restaurants
+            <a
+              onClick={toRest}
+              className="btn br-theme text-white w-100 py-3  bg-black"
+              type="button"
+            >
+              visit restaurants
             </a>
           </div>
         </div>

@@ -20,7 +20,7 @@ body {
   background-color: #f7f7f7 !important;
   border: none;
 }
-.example::-webkit-scrollbar {
+.no-scroll-bar::-webkit-scrollbar {
   display: none;
 }
 a {
@@ -387,14 +387,14 @@ a {
 }
 .font-boldest-second-biggest{
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 56px;
 }
 @media (max-width: 768px) {
   .font-boldest-second-biggest{ 
     font-weight: 600;
-font-size: 30px;
-line-height: 40px;
+    font-size: 30px;
+    line-height: 40px;
   }
 }
 .input-n-biggest{
@@ -453,7 +453,8 @@ line-height: 24px;
     line-height: 17px;
   }
   .the-food{
-    font-size: 16px;
+    font-size: 14px;
+    padding: 10px;
   }
   .fs-36-14{
     font-weight: 700;
@@ -538,4 +539,10 @@ tr:nth-child(even) {
 }
 .opacity-03{
   opacity: 0.3;
+}
+.shine-on-hover:hover{
+  transition: .5s ease;
+  box-shadow: -4px -1px 40px -5px silver;
+  -webkit-box-shadow: -4px -1px 40px -5px silver;
+  -moz-box-shadow: -4px -1px 40px -5px silver;
 }

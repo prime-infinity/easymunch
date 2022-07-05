@@ -97,7 +97,7 @@ function Footer() {
                 </div>
 
                 <div className="ps-0 mt-3 col-10">
-                  <button className="btn btn-lg btn-dark" type="button">
+                  <button className="btn w-100 btn-lg btn-dark" type="button">
                     <img
                       src="images/Apple App Store Coming Soon.png"
                       alt=""
@@ -107,7 +107,7 @@ function Footer() {
                 </div>
 
                 <div className="ps-0 col-10 pt-3">
-                  <button className="btn btn-lg btn-dark" type="button">
+                  <button className="btn w-100 btn-lg btn-dark" type="button">
                     <img
                       src="images/google play Store Coming Soon.png"
                       alt=""

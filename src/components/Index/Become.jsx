@@ -1,20 +1,20 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Become() {
-  let navigate = useNavigate()
-  const toBeVendor = ()=>{
+  let navigate = useNavigate();
+  const toBeVendor = () => {
     console.log("yes");
-    navigate("/vendor")
-  }
+    navigate("/vendor");
+  };
 
   return (
     <section>
-      <div className="container py-3">
+      <div className="container pt-3 pb-5">
         {/*<!-- large screen -->*/}
         <div className="row d-md-flex d-none">
           <div className="col-4">
-            <div className="card border-0">
+            <div className="card border-0 shine-on-hover">
               <div className="card-body cur-pointer" onClick={toBeVendor}>
                 <img
                   src="illustrate/illustration (5).png"
@@ -33,7 +33,7 @@ function Become() {
             </div>
           </div>
           <div className="col-4">
-            <div className="card border-0">
+            <div className="card border-0 shine-on-hover">
               <div className="card-body">
                 <img
                   src="illustrate/illustration (2).png"
@@ -50,7 +50,7 @@ function Become() {
             </div>
           </div>
           <div className="col-4">
-            <div className="card border-0">
+            <div className="card border-0 shine-on-hover">
               <div className="card-body">
                 <img
                   src="illustrate/illustration (4).png"
@@ -84,7 +84,6 @@ function Become() {
               with ease.
             </div>
           </div>
-          
         </div>
         <div className="row d-md-none pt-5">
           <div className="col-12">

@@ -109,7 +109,7 @@ function Header() {
         collapseOnSelect
         expand="lg"
         id="myHeader"
-        className="pt-3 pt-md-1"
+        className="pt-4 pt-md-1"
       >
         <Container fluid className="mx-md-5 mx-3">
           <Navbar.Brand className="cur-pointer" onClick={goHome}>
