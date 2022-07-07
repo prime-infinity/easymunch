@@ -4,13 +4,11 @@ export const menuSlice = createSlice({
   name: "menu",
   initialState: {
     menu: false,
-    
   },
   reducers: {
     toggleMenu: (state, action) => {
-      state.menu = !state.menu;
+      state.menu = action.payload;
     },
-   
   },
 });
 

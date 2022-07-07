@@ -22,7 +22,10 @@ function Header() {
   const location = useLocation();
 
   const showMobileMenu = () => {
-    dispatch(toggleMenu());
+    dispatch(toggleMenu(true));
+  };
+  const closeMobileMenu = () => {
+    dispatch(toggleMenu(false));
   };
   const showSecMenu = () => {
     //show secondary  menu
@@ -31,14 +34,17 @@ function Header() {
 
   const toLogin = () => {
     navigate("/login");
+    dispatch(toggleMenu(false));
   };
 
   const toRest = () => {
     navigate("/resturants");
+    dispatch(toggleMenu(false));
   };
 
   const goHome = () => {
     navigate("/");
+    dispatch(toggleMenu(false));
   };
 
   const notShowSignIn = () => {
@@ -69,26 +75,12 @@ function Header() {
       myFunction();
     };
     var header = document.getElementById("myHeader");
-    var logoText = document.getElementById("logo-text");
-    var logoCart = document.getElementById("logo-text2");
-    var menuB = document.getElementById("menu-burger");
-
     var sticky = header.offsetTop;
-
     function myFunction() {
       if (window.pageYOffset > sticky) {
         header.classList.add("bg-white-native");
-        logoText.classList.add("text-dark");
-        logoText.classList.remove("text-white");
-        logoCart.classList.add("text-dark");
-        logoCart.classList.remove("text-white");
-        menuB.classList.add("text-dark");
-        menuB.classList.remove("text-white");
       } else {
         header.classList.remove("bg-white-native");
-        logoText.classList.add("text-white");
-        logoCart.classList.add("text-white");
-        menuB.classList.add("text-white");
       }
     }
   }, []);
@@ -96,8 +88,14 @@ function Header() {
   return (
     <>
       <>
-        <MobileMenu toRest={toRest} openCart={showCartModal} logout={logout} />
-        <Overlay width={`35%`} closeOverlay={showMobileMenu} />
+        <MobileMenu
+          toRest={toRest}
+          toLogin={toLogin}
+          toHome={goHome}
+          openCart={showCartModal}
+          logout={logout}
+        />
+        <Overlay width={`35%`} closeOverlay={closeMobileMenu} />
       </>
 
       {cartModal && (
@@ -113,13 +111,12 @@ function Header() {
       >
         <Container fluid className="mx-md-5 mx-3">
           <Navbar.Brand className="cur-pointer" onClick={goHome}>
-            <span id="logo-text" className="text-white">
+            <span id="logo-text" className="text-dark">
               EasyMunch
             </span>
           </Navbar.Brand>
           <span
-            id="menu-burger"
-            className="d-block d-md-none text-white"
+            className="d-block d-md-none text-dark"
             style={{ zIndex: "3" }}
             onClick={showMobileMenu}
           >
@@ -197,7 +194,7 @@ function Header() {
                 className="my-auto mx-3"
                 style={{ padding: "0.5rem 1rem", cursor: "pointer" }}
               >
-                <div id="logo-text2" className="text-white">
+                <div className="text-dark">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="svg-icon"
@@ -277,11 +274,20 @@ function Header() {
                   )}
                 </Nav.Link>
               )}
-              {notShowSignIn() && (
-                <Nav.Link onClick={toLogin}>
-                  <span className="btn btn-n-small px-4 fw-bold">Sign In</span>
-                </Nav.Link>
-              )}
+
+              <>
+                {notShowSignIn() ? (
+                  <Nav.Link onClick={toLogin}>
+                    <span className="btn btn-n-small px-4 fw-bold">
+                      Sign In
+                    </span>
+                  </Nav.Link>
+                ) : (
+                  <Nav.Link onClick={goHome}>
+                    <span className="btn btn-n-small px-4 fw-bold">Home</span>
+                  </Nav.Link>
+                )}
+              </>
             </Nav>
           </Navbar.Collapse>
         </Container>

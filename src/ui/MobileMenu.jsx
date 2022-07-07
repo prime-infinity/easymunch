@@ -1,9 +1,9 @@
 import { useSelector } from "react-redux";
-import { Link, useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import "animate.css";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
-function MobileMenu({ toRest, logout, openCart }) {
+function MobileMenu({ toRest, toLogin, toHome, logout, openCart }) {
   const mMenu = useSelector((state) => state.menu.menu);
   const navigate = useNavigate();
   const notShowSignIn = () => {
@@ -41,13 +41,22 @@ function MobileMenu({ toRest, logout, openCart }) {
                   </span>
                 </li>
               )}
-              {notShowSignIn() && (
-                <li className="pb-3">
-                  <Link to="/login">
-                    <span className="btn btn-n-small bg-gr w-100">Login</span>
-                  </Link>
-                </li>
-              )}
+              <>
+                {notShowSignIn() ? (
+                  <li className="pb-3">
+                    <a onClick={toLogin}>
+                      <span className="btn btn-n-small bg-gr w-100">Login</span>
+                    </a>
+                  </li>
+                ) : (
+                  <li className="pb-3">
+                    <a onClick={toHome}>
+                      <span className="btn btn-n-small bg-gr w-100">Home</span>
+                    </a>
+                  </li>
+                )}
+              </>
+
               {location.pathname !== "/resturants" && (
                 <li className="py-3" onClick={toRest}>
                   <span className="btn rounded-pill">

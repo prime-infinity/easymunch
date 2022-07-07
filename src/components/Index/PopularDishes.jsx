@@ -21,16 +21,14 @@ function PopularDishes() {
               <div className="col-8 col-md-6 col-lg-3 mx-2 mx-md-5">
                 <div className="d-grid mt-5 pt-5 gap-2 col-12 mx-auto">
                   <a
-                    className="btn border-0 py-2 rounded-pill bg-black text-white"
+                    className="btn border-0 br-theme py-2 bg-black text-white"
                     type="button"
                   >
-                    See our restaurants
+                    Popular dishes
                   </a>
                 </div>
                 <div className="p text-center px-2 px-md-4 pt-2 text-capitalize">
-                  <small>
-                    Browse meals from over 100 restaurants in your city!
-                  </small>
+                  <small>Browse dishes from over 100 restaurants!</small>
                 </div>
               </div>
             </div>
