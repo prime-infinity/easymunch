@@ -10,6 +10,8 @@ import { Provider } from "react-redux";
 import Index from "./views/Index";
 import Login from "./views/Login";
 import Register from "./views/Register";
+import Resturants from "./views/Resturants";
+import InResturant from "./views/InResturant";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -20,6 +22,8 @@ ReactDOM.render(
             <Route index element={<Index />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/resturants" element={<Resturants />} />
+            <Route path="/in-resturant" element={<InResturant />} />
           </Route>
         </Routes>
       </BrowserRouter>

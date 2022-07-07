@@ -26,7 +26,7 @@ function CartModal({ closeModal }) {
                   My Cart
                   </h5>*/}
                 </div>
-                <div className="col-2">
+                <div className="col-2 text-end">
                   <button
                     onClick={closeModal}
                     type="button"

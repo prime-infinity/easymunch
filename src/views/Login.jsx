@@ -3,6 +3,7 @@ import { login } from "../helpers/web";
 import { setAuth, saveAuthToLocal } from "../redux/silces/authSlice";
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
+import SignIns from "../ui/SignIns";
 
 function Login() {
   let navigate = useNavigate();
@@ -42,17 +43,7 @@ function Login() {
   return (
     <div>
       <div className="container-fluid pt-5">
-        <div className="h3 fw-bold text-center mt-5 pt-5">Sign In</div>
-        <div className="p text-primary text-center mt-5">
-          <span className="p-4 bg-theme  br-theme border">
-            <img
-              src="images/flat-color-icons_google.png"
-              alt=""
-              className="img-fluid mb-1 p-1"
-            />
-            Sign In With Google
-          </span>
-        </div>
+        <SignIns argss={"In"} />
         {/*<!-- horizontal line with OR -->*/}
         <div className="row d-flex justify-content-center mt-5">
           <div className="col-11 col-md-8 col-lg-5">

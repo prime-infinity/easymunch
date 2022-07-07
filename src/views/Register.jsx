@@ -3,6 +3,7 @@ import { register } from "../helpers/web";
 import { setAuth, saveAuthToLocal } from "../redux/silces/authSlice";
 import { Link, useNavigate } from "react-router-dom";
 import { useDispatch } from "react-redux";
+import SignIns from "../ui/SignIns";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Register() {
@@ -43,17 +44,7 @@ function Register() {
   return (
     <div>
       <div className="container-fluid  pt-5 ">
-        <div className="h3 fw-bold text-center mt-5 pb-5">Sign Up</div>
-        <div className="p text-primary text-center mt-5">
-          <span className="p-4 bg-theme br-theme">
-            <img
-              src="images/flat-color-icons_google.png"
-              alt=""
-              className="img-fluid mb-1 p-1"
-            />
-            Sign Up With Google
-          </span>
-        </div>
+        <SignIns argss={"Up"} />
         {/*<!-- horizontal line with OR -->*/}
         <div className="row d-flex justify-content-center mt-5">
           <div className="col-11 col-md-8 col-lg-5">
