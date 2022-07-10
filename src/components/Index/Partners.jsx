@@ -23,7 +23,7 @@ function Partners() {
             <div className="d-none d-md-block mt-3 pb-3 mt-lg-5">
               <button
                 onClick={toRest}
-                className="btn w-100 d-none  d-md-block py-3 px-4 text-white bg-black"
+                className="btn w-100 d-none br-theme d-md-block py-3 px-4 text-white bg-black"
                 type="button"
               >
                 view resturants

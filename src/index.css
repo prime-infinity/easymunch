@@ -8,14 +8,12 @@ body {
   background-position: center;
   min-height: 100vh;
 }
-.landingBgMobile {
-  background-image:linear-gradient(90deg, rgb(0 0 0 / 60%), rgb(0 0 0 / 60%)), url("/public/images/vendor-splash-image.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  min-height: 75vh;
-}
 
+@media (max-width: 768px) {
+  .landingBg {
+    height: 75vh;
+  }
+}
 .sign-up-form {
   background-color: #f7f7f7 !important;
   border: none;
@@ -545,4 +543,29 @@ tr:nth-child(even) {
   box-shadow: -4px -1px 40px -5px silver;
   -webkit-box-shadow: -4px -1px 40px -5px silver;
   -moz-box-shadow: -4px -1px 40px -5px silver;
+}
+.m-cat-head {
+  display: flex;
+  position: relative;
+}
+.cat-left {
+  position: relative;
+  flex: 0 0 120px;
+  max-width: 120px;
+  min-height: 120px;
+  transition: all 0.2s ease;
+}
+span.cat-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  
+}
+.stubburn-height{
+  height: 128px !important;
 }

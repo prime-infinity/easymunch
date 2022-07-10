@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FoodViewModal from "./FoodViewModal";
+import FakeFoodViewModal from "./FoodViewModal";
 
 function Meal() {
   const [isViewingItem, setIsViewItem] = useState(false);
@@ -11,7 +11,7 @@ function Meal() {
   };
   return (
     <>
-      {isViewingItem && <FoodViewModal closeModal={closeModal} />}
+      {isViewingItem && <FakeFoodViewModal closeModal={closeModal} />}
       <div
         className="col-12 col-md-6 col-lg-3 cur-pointer"
         onClick={showMealDetail}
@@ -23,10 +23,10 @@ function Meal() {
               alt=""
               className="img-fluid w-100"
             />
-            <h6 className="card-title pt-2 fw-bold mb-1">
+            <h6 className="card-title pt-2 restaurantCardHeader fw-bold text-uppercase mb-1">
               Carlitos way special
             </h6>
-            <p className="card-text mb-1 text-muted">
+            <p className="card-text mb-1 restaurantCardText">
               Lamb ribs/pork ribs with creamy jacket
             </p>
             <div className="fw-bold">₦9,000.00</div>

@@ -12,6 +12,8 @@ import Login from "./views/Login";
 import Register from "./views/Register";
 import Resturants from "./views/Resturants";
 import InResturant from "./views/InResturant";
+import BecomeVendor from "./views/BecomeVendor";
+import Checkout from "./views/Checkout";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -24,6 +26,8 @@ ReactDOM.render(
             <Route path="/register" element={<Register />} />
             <Route path="/resturants" element={<Resturants />} />
             <Route path="/in-resturant" element={<InResturant />} />
+            <Route path="/vendor" element={<BecomeVendor />} />
+            <Route path="/checkout" element={<Checkout />} />
           </Route>
         </Routes>
       </BrowserRouter>

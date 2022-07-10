@@ -10,75 +10,82 @@ function BecomeVendor() {
 
   return (
     <>
-      <section className="landingBg d-none d-lg-block pt-5">
-        <div className="container pt-5">
-          <div className="row me-5 pb-5">
-            <div className="col-12 col-lg-6 ps-lg-5 pt-lg-5 mt-lg-5 pe-lg-5 mx-3 mx-lg-0">
-              <div className="h1 text-white fw-bold mt-5">
-                Delivery to your customers <br />
-                <span
-                  style={{
-                    backgroundColor: "black",
-                  }}
-                >
-                  with ease!
-                </span>
-              </div>
-              <div className="p text-white col-12 col-lg-7 mb-5">
-                Easymunch Ltd platform gives you the flexibility, visibility and
-                customer insights you need to connect with more customers.
-                Partner with us today.
-              </div>
-              <div className="h5 text-white mt-5">
-                <span
-                  className="p-lg-1"
-                  style={{
-                    backgroundColor: "black",
-                  }}
-                >
-                  Join Restaurants Favorite delivery Partner
-                </span>
-              </div>
-              {/*<!-- partner resturants images -->*/}
-              <div className="row pt-5">
-                <div className="col">
-                  <img
-                    src="images/ed25389d-39fa-415d-acf7-e46d017d1b93_large-removebg-preview 1.png"
-                    alt=""
-                    className="img-fluid mt-4"
-                  />
+      <div className="landingBg">
+        <div className="container-fluid px-md-4 pt-md-5">
+          <div className="row pt-md-5">
+            <div className="pt-5 mt-5">
+              <div className="col-12 col-lg-6 ps-lg-5 px-3 px-md-0">
+                <div className="h1 text-white fw-bold mt-5">
+                  Delivery to your customers <br />
+                  <span
+                    style={{
+                      backgroundColor: "black",
+                    }}
+                  >
+                    with ease!
+                  </span>
                 </div>
-                <div className="col">
-                  <img
-                    src="images/download-removebg-preview 1.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                <div className="p text-white col-12 col-lg-7 mb-5">
+                  Easymunch Ltd platform gives you the flexibility, visibility
+                  and customer insights you need to connect with more customers.
+                  Partner with us today.
                 </div>
-                <div className="col">
-                  <img
-                    src="images/147f3d55-e9f8-45cd-89fa-cd9d40f98e9e_large-removebg-preview 1.png"
-                    alt=""
-                    className="img-fluid mt-4"
-                  />
+                <div className="h5 text-white mt-5">
+                  <span
+                    className="p-lg-1"
+                    style={{
+                      backgroundColor: "black",
+                    }}
+                  >
+                    Join Restaurants Favorite delivery Partner
+                  </span>
                 </div>
-                <div className="col">
-                  <img
-                    src="images/download__1_-removebg-preview 1.png"
-                    alt=""
-                    className="img-fluid"
-                  />
+                {/*<!-- partner resturants images -->*/}
+                <div className="row pt-5">
+                  <div className="col">
+                    <img
+                      src="images/ed25389d-39fa-415d-acf7-e46d017d1b93_large-removebg-preview 1.png"
+                      alt=""
+                      className="img-fluid mt-4"
+                    />
+                  </div>
+                  <div className="col">
+                    <img
+                      src="images/download-removebg-preview 1.png"
+                      alt=""
+                      className="img-fluid"
+                    />
+                  </div>
+                  <div className="col">
+                    <img
+                      src="images/147f3d55-e9f8-45cd-89fa-cd9d40f98e9e_large-removebg-preview 1.png"
+                      alt=""
+                      className="img-fluid mt-4"
+                    />
+                  </div>
+                  <div className="col">
+                    <img
+                      src="images/download__1_-removebg-preview 1.png"
+                      alt=""
+                      className="img-fluid"
+                    />
+                  </div>
                 </div>
               </div>
             </div>
+            <div className="col-12 d-md-none col-md-3  ps-4 py-md-5">
+              <button className="btn bg-secondary w-100" type="button">
+                <small className="text-white">Become a vendor</small>
+              </button>
+            </div>
             {/*<!-- form -->*/}
-            <div
+            {/*<div
               className="col-6 d-none d-lg-block px-5 py-5 rounded"
               style={{ backgroundColor: "white" }}
             >
               <form action="">
                 <div className="h5 fw-bold">REGISTER YOUR RESTAURANT</div>
-                {/*<!-- resturant name input -->*/}
+                
                 <div className="h6 mt-5">Restaurant Name</div>
                 <input
                   type="email"
@@ -86,7 +93,7 @@ function BecomeVendor() {
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
-                {/*<!--restaurant address input -->*/}
+                
                 <div className="h6 mt-4">Restaurant Address</div>
                 <input
                   type="email"
@@ -95,7 +102,7 @@ function BecomeVendor() {
                   aria-describedby="emailHelp"
                 />
 
-                {/*<!-- personal details input -->*/}
+                
                 <div className="p mt-5">Personal Details</div>
                 <div className="h6 mt-4">Owner Name</div>
                 <input
@@ -118,7 +125,7 @@ function BecomeVendor() {
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                 />
-                {/*<!-- password -->*/}
+                
                 <div className="h6 mt-4">Password</div>
                 <input
                   type="password"
@@ -126,7 +133,7 @@ function BecomeVendor() {
                   id="exampleInputPassword1"
                 />
 
-                {/*<!-- submit button -->*/}
+                
                 <div className="d-grid gap-2 col-11 mx-auto mt-5">
                   <button
                     className="btn btn-primary border-0 rounded-pill p-3 fw-bold"
@@ -145,179 +152,10 @@ function BecomeVendor() {
                   <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
                 </div>
               </form>
-            </div>
+            </div>*/}
           </div>
         </div>
-      </section>
-      <section className="landingBgMobile pt-5 d-lg-none">
-        <nav className="d-flex justify-content-between">
-          <div className="container-fluid">
-            <div className="row">
-              <div className="col-6">
-                <a href="index.html">
-                  <img
-                    src="images/easymunch logo png 1.png"
-                    alt=""
-                    width="100px"
-                    className="img-fluid ms-lg-5 ms-4"
-                  />
-                </a>
-              </div>
-              <div className="col-6 text-white pt-4 pe-5 justify-content-end d-none d-md-flex">
-                <a href="index.html" style={{ color: "white" }}>
-                  <small>Back to Home Page</small>
-                </a>
-              </div>
-
-              <div className="col-6 d-flex justify-content-end">
-                <a className="btn d-md-none bg-light mt-4 rounded-pill me-1">
-                  <small className="fw-bold">Register as Vendor</small>
-                </a>
-              </div>
-            </div>
-          </div>
-        </nav>
-        <div className="container-fluid">
-          <div className="row me-5 pb-5 mt-5">
-            <div className="col-12 col-lg-6 ps-lg-5 pt-lg-5 mt-lg-5 pe-lg-5 mx-3 mx-lg-0">
-              <h1
-                className="h1 col-12 col-md-7 text-white fw-bold mt-5"
-                style={{ fontSize: "30px" }}
-              >
-                Delivery to your customers <br />
-                <span
-                  style={{
-                    backgroundColor: "black",
-                  }}
-                >
-                  with ease!
-                </span>
-              </h1>
-              <div className="p text-white col-12 col-md-6 mt-4 mt-md-5 mb-5">
-                Easymunch Ltd platform gives you the flexibility, visibility and
-                customer insights you need to connect with more customers.
-                Partner with us today.
-              </div>
-              <div className="h5 text-white mt-5 pt-md-5">
-                <span
-                  className="p-lg-1"
-                  style={{
-                    backgroundColor: "black",
-                  }}
-                >
-                  Join Restaurants Favorite delivery Partner
-                </span>
-              </div>
-              {/*<!-- partner resturants images -->*/}
-              <div className="row pt-5">
-                <div className="col">
-                  <img
-                    src="images/ed25389d-39fa-415d-acf7-e46d017d1b93_large-removebg-preview 1.png"
-                    alt=""
-                    className="img-fluid mt-4"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    src="images/download-removebg-preview 1.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    src="images/147f3d55-e9f8-45cd-89fa-cd9d40f98e9e_large-removebg-preview 1.png"
-                    alt=""
-                    className="img-fluid mt-4"
-                  />
-                </div>
-                <div className="col">
-                  <img
-                    src="images/download__1_-removebg-preview 1.png"
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
-            </div>
-            {/*<!-- form -->*/}
-            <div
-              className="col-6 d-none d-lg-block px-5 py-5 rounded"
-              style={{ backgroundColor: "white" }}
-            >
-              <form action="">
-                <div className="h5 fw-bold">REGISTER YOUR RESTAURANT</div>
-                {/*<!-- resturant name input -->*/}
-                <div className="h6 mt-5">Restaurant Name</div>
-                <input
-                  type="email"
-                  className="form-control sign-up-form border-0"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                {/*<!--restaurant address input -->*/}
-                <div className="h6 mt-4">Restaurant Address</div>
-                <input
-                  type="email"
-                  className="form-control sign-up-form border-0"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-
-                {/*<!-- personal details input -->*/}
-                <div className="p mt-5">Personal Details</div>
-                <div className="h6 mt-4">Owner Name</div>
-                <input
-                  type="email"
-                  className="form-control sign-up-form border-0"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div className="h6 mt-4">Owner Email</div>
-                <input
-                  type="email"
-                  className="form-control sign-up-form border-0"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                <div className="h6 mt-4">Phone Number</div>
-                <input
-                  type="email"
-                  className="form-control sign-up-form border-0"
-                  id="exampleInputEmail1"
-                  aria-describedby="emailHelp"
-                />
-                {/*<!-- password -->*/}
-                <div className="h6 mt-4">Password</div>
-                <input
-                  type="password"
-                  className="form-control sign-up-form border-0"
-                  id="exampleInputPassword1"
-                />
-
-                {/*<!-- submit button -->*/}
-                <div className="d-grid gap-2 col-11 mx-auto mt-5">
-                  <button
-                    className="btn btn-primary border-0 rounded-pill p-3 fw-bold"
-                    type="button"
-                    style={{
-                      backgroundColor: "black",
-                      color: "white",
-                    }}
-                    onClick={toVendorDash}
-                  >
-                    Sign up
-                  </button>
-                </div>
-                <div className="p mt-3">
-                  By signing up an account you accept
-                  <a href="">Terms of Use</a> and <a href="">Privacy Policy</a>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
       <section>
         <div className="container-fluid">
           <div className="fs-24-real fw-bold pt-5 ps-3 ps-md-5 pb-3">
