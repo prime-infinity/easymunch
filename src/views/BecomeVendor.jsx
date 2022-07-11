@@ -1,12 +1,12 @@
 import React from "react";
 import EasyMunchStepsSwiper from "../components/BecomeVendor/EasyMunchStepsSwiper";
-import { useNavigate } from "react-router-dom";
+//import { useNavigate } from "react-router-dom";
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function BecomeVendor() {
-  let navigate = useNavigate();
-  const toVendorDash = () => {
+  //let navigate = useNavigate();
+  /*const toVendorDash = () => {
     navigate("/vendor-dashboard");
-  };
+  };*/
 
   return (
     <>

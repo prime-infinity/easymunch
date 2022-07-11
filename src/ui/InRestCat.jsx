@@ -3,7 +3,7 @@ function InRestCat() {
   return (
     <div className="col mt-2">
       <button
-        className="btn w-100 fw-bold"
+        className="btn w-mc fw-bold"
         style={{ borderBottom: "2px solid black", borderRadius: "0px" }}
       >
         coke

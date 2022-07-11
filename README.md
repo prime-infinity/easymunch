@@ -4,3 +4,4 @@
 3: Whole text in vendor dashboard needs rearragnement
 4: we are even to consider the icons that lead us to become a vendor page. citation, doordash
 5: seems whole vendor page needs to be redesigned
+6: there is a difference in design between card modal and checkout details, number of item selected

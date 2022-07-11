@@ -14,6 +14,9 @@ import Resturants from "./views/Resturants";
 import InResturant from "./views/InResturant";
 import BecomeVendor from "./views/BecomeVendor";
 import Checkout from "./views/Checkout";
+import CheckoutDetails from "./components/Checkout/CheckoutDetails";
+import CheckoutAddress from "./components/Checkout/CheckoutAddress";
+import CheckoutReview from "./components/Checkout/CheckoutReview";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -27,7 +30,11 @@ ReactDOM.render(
             <Route path="/resturants" element={<Resturants />} />
             <Route path="/in-resturant" element={<InResturant />} />
             <Route path="/vendor" element={<BecomeVendor />} />
-            <Route path="/checkout" element={<Checkout />} />
+            <Route path="/checkout" element={<Checkout />}>
+              <Route index element={<CheckoutDetails />} />
+              <Route path="address" element={<CheckoutAddress />} />
+              <Route path="review" element={<CheckoutReview />} />
+            </Route>
           </Route>
         </Routes>
       </BrowserRouter>

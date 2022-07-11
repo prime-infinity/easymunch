@@ -569,3 +569,16 @@ span.cat-icon {
 .stubburn-height{
   height: 128px !important;
 }
+.w-mc{
+  width: max-content;
+}
+
+.text-muted-n{
+  color: silver !important;
+}
+.col-n{
+  flex: 0 0 0%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 0%;
+}
