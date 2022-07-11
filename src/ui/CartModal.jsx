@@ -4,7 +4,7 @@ function CartModal({ closeModal }) {
   let navigate = useNavigate();
   const goToCheckout = () => {
     closeModal();
-    navigate("/checkout");
+    navigate("/checkout/details");
   };
 
   return (

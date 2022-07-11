@@ -574,11 +574,20 @@ span.cat-icon {
 }
 
 .text-muted-n{
-  color: silver !important;
+  color: silver;
 }
 .col-n{
   flex: 0 0 0%;
     flex-grow: 0;
     flex-shrink: 0;
     flex-basis: 0%;
+}
+.bs-hidden{
+  border-style: hidden !important;
+}
+.input-rm-focus:focus{
+  outline: none;
+}
+.bg-very-green{
+  background-color: #4CAF50;
 }

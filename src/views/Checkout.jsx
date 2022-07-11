@@ -1,21 +1,46 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import "./Checkout.css";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
 function Checkout() {
+  const location = useLocation();
+  let navigate = useNavigate();
+  const inDetails = () => {
+    return location.pathname === "/checkout/details" ? true : false;
+  };
+  const inAddress = () => {
+    return location.pathname === "/checkout/address" ? true : false;
+  };
+  const inReview = () => {
+    return location.pathname === "/checkout/review" ? true : false;
+  };
+
+  const toDetails = () => {
+    navigate("/checkout/details");
+  };
+  const toAddress = () => {
+    navigate("/checkout/address");
+  };
+  const toSummary = () => {
+    navigate("/checkout/review");
+  };
+
   return (
     <div className="container-fluid pt-5 px-md-5">
       <div className="row pt-5">
         <div className="col-12 px-4">
           <div className="row">
-            <div className="col-12 col-md-7">
+            <div className="col-12 col-md-8">
               <div
                 className="row no-scroll-bar flex-nowrap"
                 style={{ overflowX: "scroll" }}
               >
                 <div className="col-n pe-4">
                   <button
-                    className="btn px-3 w-mc text-muted-n"
+                    onClick={toDetails}
+                    className={`btn px-3 w-mc fw-bold ${
+                      inDetails() ? "text-dark" : "text-muted-n"
+                    }`}
                     style={{
                       borderBottom: "2px solid black",
                       borderRadius: "0px",
@@ -26,7 +51,10 @@ function Checkout() {
                 </div>
                 <div className="col-n px-4">
                   <button
-                    className="btn px-3 w-mc text-muted-n"
+                    onClick={toAddress}
+                    className={`btn px-3 w-mc fw-bold ${
+                      inAddress() ? "text-dark" : "text-muted-n"
+                    }`}
                     style={{
                       borderBottom: "2px solid black",
                       borderRadius: "0px",
@@ -37,7 +65,10 @@ function Checkout() {
                 </div>
                 <div className="col-n px-4">
                   <button
-                    className="btn px-3 w-mc text-muted-n"
+                    onClick={toSummary}
+                    className={`btn px-3 w-mc fw-bold ${
+                      inReview() ? "text-dark" : "text-muted-n"
+                    }`}
                     style={{
                       borderBottom: "2px solid black",
                       borderRadius: "0px",
@@ -48,7 +79,7 @@ function Checkout() {
                 </div>
               </div>
             </div>
-            <div className="col-12 col-md-5">
+            <div className="col-12 col-md-4">
               <Outlet />
             </div>
           </div>

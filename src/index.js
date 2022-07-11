@@ -31,7 +31,7 @@ ReactDOM.render(
             <Route path="/in-resturant" element={<InResturant />} />
             <Route path="/vendor" element={<BecomeVendor />} />
             <Route path="/checkout" element={<Checkout />}>
-              <Route index element={<CheckoutDetails />} />
+              <Route path="details" element={<CheckoutDetails />} />
               <Route path="address" element={<CheckoutAddress />} />
               <Route path="review" element={<CheckoutReview />} />
             </Route>
