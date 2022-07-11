@@ -1,4 +1,7 @@
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
+import InnerAddress from "../components/Checkout/inners/InnerAddress";
+import InnerDetails from "../components/Checkout/inners/InnerDetails";
+import InnerReview from "../components/Checkout/inners/InnerReview";
 import "./Checkout.css";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
@@ -76,6 +79,17 @@ function Checkout() {
                   >
                     Payment and Summary{" "}
                   </button>
+                </div>
+              </div>
+              <div className="row">
+                <div className="col-12">
+                  {inDetails() ? (
+                    <InnerDetails />
+                  ) : inAddress() ? (
+                    <InnerAddress />
+                  ) : inReview() ? (
+                    <InnerReview />
+                  ) : null}
                 </div>
               </div>
             </div>
