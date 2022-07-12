@@ -41,14 +41,14 @@ function CheckoutReview() {
               </tbody>
             </table>
             <div className="row px-3 pt-3">
-              <div className="bg-theme col-md-7 mb-3 mb-md-0 col-12 py-2 px-0 br-theme me-auto border">
+              <div className="bg-theme border-0 col-md-7 mb-3 mb-md-0 col-12 py-2 px-0 br-theme me-auto border">
                 <input
-                  className="bg-theme border-0 w-100 ps-3 input-rm-focus"
+                  className="bg-theme fs-14 border-0 w-100 ps-3 input-rm-focus"
                   type="text"
                   placeholder="Use Voucher/Coupons Here"
                 />
               </div>
-              <div className="col-md-4 bg-theme col-12 br-theme py-2 text-center border">
+              <div className="col-md-4 bg-theme border-0 col-12 br-theme py-2 text-center border">
                 <span className="me-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

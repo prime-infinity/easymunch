@@ -591,3 +591,18 @@ span.cat-icon {
 .bg-very-green{
   background-color: #4CAF50;
 }
+.text-grey{
+  color: silver;
+}
+.d-flex-native{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.border-bottom-only{
+  border-bottom: 1px solid silver;
+}
+.n-checkbox{
+  height: 20px;
+  width: 20px;
+}

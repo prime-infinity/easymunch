@@ -38,7 +38,7 @@ function CartModal({ closeModal }) {
               </div>
             </div>
             <div
-              className="modal-body example flex-nowrap"
+              className="modal-body no-scroll-bar flex-nowrap"
               style={{ overflowY: "scroll", height: "80vh" }}
             >
               {[1, 2, 3, 4, 5, 6, 7].map((item, index) => (

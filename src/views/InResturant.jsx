@@ -24,18 +24,26 @@ function InResturant() {
         {/** contacts */}
         <div className="row px-md-5 mx-md-3">
           <div className="col-12 px-4">
-            <div className="pt-3 ">
-              <img src="images/Vector location.png" alt="" />
-              <span className="ps-1">107 Boundary Road, GRA Benin City</span>
+            <div className="pt-2 text-grey fs-14 d-flex-native">
+              <img
+                className="img-fluid"
+                src="/images/Vector location.png"
+                alt=""
+              />
+              <span className="ps-2">107 Boundary Road, GRA Benin City</span>
             </div>
-            <div className="pt-2">
-              <img src="images/Vector telephone.png" alt="" />
-              <span className="ps-1"></span>0907 000 0000
+            <div className="pt-2 text-grey fs-14 d-flex-native">
+              <img
+                src="/images/Vector telephone.png"
+                className="img-fluid"
+                alt=""
+              />
+              <span className="ps-2"></span>0907 000 0000
             </div>
 
-            <div className="pt-2">
-              <img src="images/Vector green.png" alt="" />
-              <span className="text-success ps-1">Open </span>
+            <div className="pt-2 text-grey fs-14 d-flex-native">
+              <img src="images/Vector green.png" className="img-fluid" alt="" />
+              <span className="text-success ps-2">Open </span>
             </div>
           </div>
         </div>
