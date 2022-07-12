@@ -1,8 +1,4 @@
-import { useState } from "react";
-
 function FoodViewModal({ closeModal }) {
-  const [qty, setQty] = useState(1);
-
   return (
     <div className="row px-0 justify-content-center border" id="in-food">
       <div className="col-11 border">
