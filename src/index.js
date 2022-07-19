@@ -17,6 +17,7 @@ import Checkout from "./views/Checkout";
 import CheckoutDetails from "./components/Checkout/CheckoutDetails";
 import CheckoutAddress from "./components/Checkout/CheckoutAddress";
 import CheckoutReview from "./components/Checkout/CheckoutReview";
+import UserDashboard from "./views/UserDashboard";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -35,6 +36,7 @@ ReactDOM.render(
               <Route path="address" element={<CheckoutAddress />} />
               <Route path="review" element={<CheckoutReview />} />
             </Route>
+            <Route path="/user-dashboard" element={<UserDashboard />} />
           </Route>
         </Routes>
       </BrowserRouter>

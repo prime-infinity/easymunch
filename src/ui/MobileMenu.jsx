@@ -3,7 +3,7 @@ import { useLocation, useNavigate } from "react-router-dom";
 import "animate.css";
 
 /* eslint-disable jsx-a11y/anchor-is-valid */
-function MobileMenu({ toRest, toLogin, toHome, logout, openCart }) {
+function MobileMenu({ toRest, toLogin, toHome, logout, openCart, closeMenu }) {
   const mMenu = useSelector((state) => state.menu.menu);
   const navigate = useNavigate();
   const notShowSignIn = () => {
@@ -20,6 +20,7 @@ function MobileMenu({ toRest, toLogin, toHome, logout, openCart }) {
 
   const goToUserProfile = () => {
     navigate("/user-dashboard");
+    closeMenu();
   };
 
   return (
@@ -36,25 +37,29 @@ function MobileMenu({ toRest, toLogin, toHome, logout, openCart }) {
             <ul className="navbar-nav ml-auto">
               {authState && (
                 <li className="pb-3">
-                  <span className="btn rounded-pill bg-black w-100 text-white">
+                  <span className="btn btn-n-small  w-100 ">
                     {authState.name}
                   </span>
                 </li>
               )}
               <>
-                {notShowSignIn() ? (
-                  <li className="pb-3">
-                    <a onClick={toLogin}>
-                      <span className="btn btn-n-small bg-gr w-100">Login</span>
-                    </a>
-                  </li>
-                ) : (
+                {
+                  notShowSignIn() && (
+                    <li className="pb-3">
+                      <a onClick={toLogin}>
+                        <span className="btn btn-n-small bg-gr w-100">
+                          Login
+                        </span>
+                      </a>
+                    </li>
+                  ) /*: (
                   <li className="pb-3">
                     <a onClick={toHome}>
                       <span className="btn btn-n-small bg-gr w-100">Home</span>
                     </a>
                   </li>
-                )}
+                )*/
+                }
               </>
 
               {location.pathname !== "/resturants" ? (

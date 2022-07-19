@@ -69,6 +69,11 @@ function Header() {
 
   const goToUserProfile = () => {
     navigate("/user-dashboard");
+    showSecMenu();
+  };
+
+  const closeMenu = () => {
+    dispatch(toggleMenu(false));
   };
 
   useEffect(() => {
@@ -95,6 +100,7 @@ function Header() {
           toHome={goHome}
           openCart={showCartModal}
           logout={logout}
+          closeMenu={closeMenu}
         />
         <Overlay width={`35%`} closeOverlay={closeMobileMenu} />
       </>
@@ -277,17 +283,19 @@ function Header() {
               )}
 
               <>
-                {notShowSignIn() ? (
-                  <Nav.Link onClick={toLogin}>
-                    <span className="btn btn-n-small px-4 fw-bold">
-                      Sign In
-                    </span>
-                  </Nav.Link>
-                ) : (
+                {
+                  notShowSignIn() && (
+                    <Nav.Link onClick={toLogin}>
+                      <span className="btn btn-n-small px-4 fw-bold">
+                        Sign In
+                      </span>
+                    </Nav.Link>
+                  ) /*: (
                   <Nav.Link onClick={goHome}>
                     <span className="btn btn-n-small px-4 fw-bold">Home</span>
                   </Nav.Link>
-                )}
+                )*/
+                }
               </>
             </Nav>
           </Navbar.Collapse>

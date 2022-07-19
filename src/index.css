@@ -13,6 +13,9 @@ body {
   .landingBg {
     height: 75vh;
   }
+  .table-n{
+    width: max-content;
+  }
 }
 .sign-up-form {
   background-color: #f7f7f7 !important;
@@ -490,21 +493,7 @@ line-height: 19px;
   border-bottom-right-radius: 16px;
   border-bottom-left-radius: 16px;
 }
-table {
-  border-collapse: collapse;
-  width: 1245px;
-}
-th,
-td {
-  text-align: left;
-  padding: 8px;
-}
-tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-.table-div {
-  overflow-x: auto;
-}
+
 
 .profile-table-head {
   background-color: #f7f7f7;
@@ -513,27 +502,22 @@ tr:nth-child(even) {
 .delivery-style {
   background-color: #7b61ff33;
   color: #7b61ff;
-  font-size: 9px;
 }
 .accepted-style {
   background-color: #19ee9433;
   color: #4caf50;
-  font-size: 9px;
 }
 .rejected-style {
   background-color: #f21b3f33;
   color: #f21b3f;
-  font-size: 9px;
 }
 .driver-assigned-style {
   background-color: #c4c4c433;
   color: #979797;
-  font-size: 9px;
 }
 .vendor-accepted-style {
   background-color: #1976d233;
   color: #1976d2;
-  font-size: 9px;
 }
 .opacity-03{
   opacity: 0.3;

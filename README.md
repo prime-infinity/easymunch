@@ -10,3 +10,5 @@
 
 9:argue that the last section of checkout is not necessary
 10: emphasise that there still is no "next"buttons in the checkouts
+11: argue that the badge that shows name in the mobile menu when logged in looks too much like a button
+12: there is _alot_ of work to be done in userdashboard, make citations to the one you did for favadmin

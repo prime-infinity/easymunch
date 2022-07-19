@@ -66,7 +66,7 @@ function CheckoutReview() {
                 </span>
                 <span className="fs-14">Gift Friend</span>
               </div>
-              <button className="btn bg-very-green text-white fw-bold mt-5 w-100 br-theme py-2">
+              <button className="btn bg-very-green text-white fw-bold mt-5 w-100 br-theme py-3">
                 Place Order
               </button>
             </div>
