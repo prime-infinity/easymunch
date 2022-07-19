@@ -41,7 +41,7 @@ function Checkout() {
                 <div className="col-n pe-4">
                   <button
                     onClick={toDetails}
-                    className={`btn px-3 w-mc fw-bold ${
+                    className={`btn input-rm-focus px-3 w-mc fw-bold ${
                       inDetails() ? "text-dark" : "text-muted-n"
                     }`}
                     style={{
@@ -55,7 +55,7 @@ function Checkout() {
                 <div className="col-n px-4">
                   <button
                     onClick={toAddress}
-                    className={`btn px-3 w-mc fw-bold ${
+                    className={`btn input-rm-focus px-3 w-mc fw-bold ${
                       inAddress() ? "text-dark" : "text-muted-n"
                     }`}
                     style={{
@@ -69,7 +69,7 @@ function Checkout() {
                 <div className="col-n px-4">
                   <button
                     onClick={toSummary}
-                    className={`btn px-3 w-mc fw-bold ${
+                    className={`btn input-rm-focus px-3 w-mc fw-bold ${
                       inReview() ? "text-dark" : "text-muted-n"
                     }`}
                     style={{

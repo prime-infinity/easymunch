@@ -7,3 +7,6 @@
 6: there is a difference in design between card modal and checkout details, number of item selected
 7: in the checkout page, there needs to be button to press to confirm a particular section
 8: Delivery method in checkout page heading needs more attention
+
+9:argue that the last section of checkout is not necessary
+10: emphasise that there still is no "next"buttons in the checkouts

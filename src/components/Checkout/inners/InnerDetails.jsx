@@ -3,7 +3,7 @@ function InnerDetails() {
     <div className="row pt-5 pb-5">
       <div className="col-12">
         <div className="row">
-          <div className="col-md-10 col-12 mb-5">
+          <div className="col-md-8 col-12 mb-5">
             <span className="h5 fw-bold">Woods By Road Runners</span>
             <div className="pt-2 text-grey fs-14 d-flex-native">
               <img
@@ -18,7 +18,7 @@ function InnerDetails() {
             </div>
 
             <div className="row pt-5">
-              <div className="col-md-10 col-12 mb-5">
+              <div className="col-12 mb-5">
                 <div className="border-bottom-only pb-2">
                   <div className="row">
                     <div className="col-10">
@@ -38,7 +38,7 @@ function InnerDetails() {
                   </div>
                 </div>
               </div>
-              <div className="col-md-10 col-12">
+              <div className="col-12">
                 <div className="border-bottom-only pb-2">
                   <div className="row">
                     <div className="col-10">

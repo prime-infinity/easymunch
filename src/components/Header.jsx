@@ -64,6 +64,7 @@ function Header() {
 
   const showCartModal = () => {
     setCartModal(!cartModal);
+    dispatch(toggleMenu(false));
   };
 
   const goToUserProfile = () => {

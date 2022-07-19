@@ -586,7 +586,7 @@ span.cat-icon {
   border-style: hidden !important;
 }
 .input-rm-focus:focus{
-  outline: none;
+  outline: none !important;
 }
 .bg-very-green{
   background-color: #4CAF50;
