@@ -1,5 +1,5 @@
 import { useState } from "react";
-import FakeFoodViewModal from "./FoodViewModal";
+import FoodViewModal from "./FoodViewModal";
 
 function Meal() {
   const [isViewingItem, setIsViewItem] = useState(false);
@@ -11,7 +11,7 @@ function Meal() {
   };
   return (
     <>
-      {isViewingItem && <FakeFoodViewModal closeModal={closeModal} />}
+      {isViewingItem && <FoodViewModal closeModal={closeModal} />}
       <div
         className="col-12 col-md-6 col-lg-3 cur-pointer"
         onClick={showMealDetail}

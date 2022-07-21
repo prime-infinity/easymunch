@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.first{
+    border-radius: 20px;
+}
+
+.options{
+    color:rgb(216, 216, 216) ;
+}
+.select{
+    font-size: 13px;
+    color:rgb(216, 216, 216) ;
+}
+.delete{
+    background-color:rgb(244, 244, 242) ;
+}
+.fs-small{
+    font-size: 10px;
+    color: red;
+}
+.protein{
+    font-size: 0.8rem;
+}
+
+.math{
+    padding: 0px 3px;
+    line-height: 1.5
+}
+    .menu ul{
+        list-style: none;
+        padding-left: 0;
+    }
+    
+    .menu ul li{
+    padding: 0 1rem;
+    border-right: 1px solid  rgb(204, 200, 200);
+    
+    }
+
+    .menu ul li:last-child{
+        border-right: none;
+    }
+
+    .menu ul li:first-child{
+        padding-left: 0;
+    }
+
+    .easymunch{
+        font-family: 'Montserrat Alternates', sans-serif; 
+    }
+
+    @media (max-width:568px) {
+        .menu ul li{
+            padding: 0 0.5rem;
+            font-size: 0.7em;
+            }  
+    }
+
+    @media (min-width:768px) {
+        .food{
+            width: 500px;
+            }  
+    }
+        .image{
+            width: 60%;
+            object-fit: cover;
+        }
+
+    @media (max-width:400px) {
+        .carl{
+            font-size: 1em;
+            }  
+    }
+    @media (max-width:576px) {
+        .image{
+            width: 100%;
+            height: 300px;
+        }
+    }
+
