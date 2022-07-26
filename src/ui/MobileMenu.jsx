@@ -36,10 +36,8 @@ function MobileMenu({ toRest, toLogin, toHome, logout, openCart, closeMenu }) {
           <div className="col-10 offset-1">
             <ul className="navbar-nav ml-auto">
               {authState && (
-                <li className="pb-3">
-                  <span className="btn btn-n-small  w-100 ">
-                    {authState.name}
-                  </span>
+                <li className="pb-3 text-center">
+                  <span className="w-100 fs-20 fw-bold">{authState.name}</span>
                 </li>
               )}
               <>

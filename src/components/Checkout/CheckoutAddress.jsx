@@ -3,8 +3,8 @@ function CheckoutAddress() {
     <div className="row" style={{ paddingTop: "0.375rem" }}>
       <div className="col-12">
         <div className="row mb-4 text-center">
-          <div className="col-12 br-theme py-2 bg-dark text-white">
-            <span className="">Please Note</span>
+          <div className="col-12">
+            <span className="fs-24-r fw-bold">Please Note</span>
           </div>
         </div>
 

@@ -1,3 +1,5 @@
+import CheckoutNav from "../../../ui/CheckoutNav";
+
 function InnerAddress() {
   return (
     <div className="row pt-5 pb-5">
@@ -28,6 +30,7 @@ function InnerAddress() {
           </div>
         </div>
       </div>
+      <CheckoutNav />
     </div>
   );
 }

@@ -3,8 +3,8 @@ function CheckoutDetails() {
     <div className="row" style={{ paddingTop: "0.375rem" }}>
       <div className="col-12">
         <div className="row mb-4 text-center">
-          <div className="col-12 br-theme py-2 bg-dark text-white">
-            <span className="">Your Order</span>
+          <div className="col-12 ">
+            <span className="fs-24-r fw-bold">Your Order</span>
           </div>
         </div>
         <div
