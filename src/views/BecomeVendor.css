@@ -1,0 +1,98 @@
+.free{
+    color: #F7F7F7;
+}
+.black{
+    color: #040404;
+}
+.play{
+    z-index: 2;
+    width: 40vw;
+}
+.delay{
+    position: relative;
+}
+.deliver{
+    font-size: 2rem;
+    max-width: 35vw;
+}
+.task{
+    border-radius: 10px;
+}
+.content{
+    color: #040404;
+    font-weight: 500;
+}
+.appo{
+    color: #979797;
+}
+.manager{
+   font-style: italic;
+   font-size: 14px;
+   font-weight: 200;
+}
+.jason{
+    color: #040404;
+    font-weight: 500;
+}
+.list{
+    font-size: 23px;
+    font-weight: 500;
+    color: #040404;
+    width: 25vw;
+}
+.paragraph{
+    font-weight: 300;
+    color: #979797;
+    font-size: 14px;
+    max-width: 20vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+.zero{
+    background-color: #F7F7F7;
+}
+
+
+@media(max-width:576px){
+    .grow{
+        width: 35vw;
+    }
+
+    .zero{
+        background-color: #F7F7F7;
+        width: 350px;
+        height: 470px;
+    }
+}
+
+@media(max-width:768px){
+    .list{
+        width: 70%;
+    }
+    .paragraph{
+        max-width: 50vw;
+    }
+    /* .play{
+        width: 70vw;
+    } */
+}
+@media(max-width:444px){
+    .list{
+        width: 80%;
+    }
+}
+@media(max-width:400px){
+    .list{
+        width: 85%;
+    }
+}
+@media(min-width: 768px) {
+    .play{
+        position: absolute;
+    }
+}
+@media(max-width: 768px) {
+    .play{
+        width: 100%;
+}
+}
