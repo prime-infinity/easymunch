@@ -4,31 +4,39 @@ import "./BecomeVendor.css";
 function BecomeVendor() {
   return (
     <>
-      <div className="container pt-3">
+      <div className="container pt-5">
         {/* Header and Image */}
-        <section className="d-sm-flex mb-5 p-5">
+        <section className="d-sm-flex pt-5 mb-5 p-2 p-md-5">
           <div className="delay">
             <div className="fw-bold mb-5 deliver">
-              Deliver
-              <span className="free">to your customers</span>
+              Deliver <span className="free">to your customers </span>
               with ease!
             </div>
             {/* commissions */}
 
             <div>
-              <div className="card zero task play h-100">
+              <div className="card border-0 p-2 p-md-4 zero task play h-100">
                 <div className="card-body">
-                  <h5 className="card-title">0% commission for 12 months !</h5>
-                  <p className="card-text">
-                    We offer the flexibility, visibility and customer insight
-                    you need to connect with more customers. Partner with us
-                    today.
+                  <h5 className="card-title fw-bold">
+                    0% commission for 12 months !
+                  </h5>
+                  <p className="card-text text-secondary">
+                    <span className="d-none d-md-block fs-14 ">
+                      We offer the flexibility, visibility and customer insight
+                      you need to connect with more customers. Partner with us
+                      today.
+                    </span>
+                    <span className="d-block d-md-none fs-16">
+                      We offer the flexibility, visibility and customer insight
+                      you need to connect with more customers. Partner with us
+                      today.
+                    </span>
                   </p>
                   <div className="input-group mb-3">
                     <input
                       type="text"
-                      className="form-control task p-3"
-                      placeholder="Restaurant"
+                      className="form-control task p-3 border-0"
+                      placeholder="Restaurant Name"
                       aria-label="Username"
                       aria-describedby="basic-addon1"
                     />
@@ -37,7 +45,7 @@ function BecomeVendor() {
                   <div className="input-group mb-3">
                     <input
                       type="text"
-                      className="form-control p-3 task"
+                      className="form-control p-3 task border-0"
                       placeholder="Location"
                       aria-label="Recipient's username"
                       aria-describedby="basic-addon2"
@@ -48,7 +56,7 @@ function BecomeVendor() {
                     <div className="input-group mb-3 col">
                       <input
                         type="text"
-                        className="form-control p-3 task"
+                        className="form-control p-3 task border-0"
                         id="basic-url"
                         aria-describedby="basic-addon3"
                         placeholder="Email"
@@ -58,18 +66,15 @@ function BecomeVendor() {
                     <div className="input-group mb-3 col">
                       <input
                         type="text"
-                        className="form-control p-3 task"
+                        className="form-control p-3 task border-0"
                         placeholder="Contact"
                       />
                     </div>
                   </div>
                   <div className="mb-4">
-                    <div
-                      style={{ backgroundColor: "#040404" }}
-                      className="text-center text-light p-2 rounded"
-                    >
+                    <button className="text-center w-100 bg-dark text-light py-3 br-theme">
                       Get Started
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -78,7 +83,7 @@ function BecomeVendor() {
 
           <div className="d-none d-md-block first ps-5">
             <img
-              src="image/standing.png"
+              src="/images/becomeVendor/1.png"
               alt=""
               className="img-fluid"
               style={{ zIndex: "-1" }}
@@ -88,13 +93,14 @@ function BecomeVendor() {
 
         {/* Reasons */}
         <section className="pt-5">
-          <div>
-            <h3 className="text-center black fw-bold">Why partner with us ?</h3>
-            <div className="d-md-flex flex-column flex-md-row align-items-center justify-content-md-between text-center">
+          <div className="pt-md-5 mt-md-5">
+            <h2 className="text-center black fw-bold">Why partner with us ?</h2>
+            <div className="d-md-flex pt-5 flex-column flex-md-row align-items-center justify-content-md-between text-center">
               <div className="mb-5">
                 <img
-                  src="image/holding the arrow.png"
-                  className="img-fluid"
+                  src="/images/becomeVendor/2.png"
+                  className="img-fluid pb-4"
+                  style={{ maxWidth: "40%" }}
                   alt=""
                 />
                 <h5 className="fw-bold">Boost your visibility</h5>
@@ -105,8 +111,9 @@ function BecomeVendor() {
               </div>
               <div className="mb-5">
                 <img
-                  src="image/Shops re-opening soon-amico 1.png"
-                  className="img-fluid"
+                  src="/images/becomeVendor/3.png"
+                  className="img-fluid pb-4"
+                  style={{ maxWidth: "40%" }}
                   alt=""
                 />
                 <h5 className="fw-bold">For business big and small</h5>
@@ -117,8 +124,9 @@ function BecomeVendor() {
               </div>
               <div className="mb-5">
                 <img
-                  src="image/Eating donuts-amico 1.png"
-                  className="img-fluid"
+                  src="/images/becomeVendor/4.png"
+                  className="img-fluid pb-4"
+                  style={{ maxWidth: "40%" }}
                   alt=""
                 />
                 <h5 className="fw-bold">Connect with customers</h5>
@@ -131,27 +139,34 @@ function BecomeVendor() {
           </div>
         </section>
         {/* Awareness */}
-        <section className="mb-5">
+        <section className="mb-5 mt-5">
           <div className="d-sm-flex justify-content-sm-between">
             <img
-              src="image/courage.png"
+              src="/images/becomeVendor/5.png"
               alt=""
               className="img-fluid d-none d-sm-block w-50 p-0"
             />
             <img
-              src="image/singleman.png"
+              src="/images/becomeVendor/5.1.png"
               alt=""
               className="d-block d-sm-none img-fluid w-100"
             />
             <div className="mt-5">
-              <div className="content fs-3 pt-3 p-5 ms-5">
-                <span className="appo">"</span>EasyMunch extends our brand
-                awareness to neighborhoods that wouldn't normally be exposed to
-                us.<span className="appo">"</span>
-              </div>
-              <div className="px-5 ms-5">
-                <p className="mb-0 jason text-end text-sm-start">jason Doe</p>
-                <p className="manager text-end text-sm-start">
+              <div className="content text-center text-md-start fs-3 pt-3 p-md-5 ">
+                <span className="appo">"</span>{" "}
+                <span className="h1">
+                  {" "}
+                  EasyMunch extends our brand awareness to neighborhoods that
+                  wouldn't normally be exposed to us.
+                </span>
+                <span className="appo">"</span>
+              </div>{" "}
+              <br />
+              <div className="px-5">
+                <h3 className="mb-0 fw-bold jason text-center text-md-start">
+                  jason Doe
+                </h3>
+                <p className="manager text-center text-md-start">
                   Manager, Chicken Republic
                 </p>
               </div>
@@ -159,18 +174,39 @@ function BecomeVendor() {
           </div>
         </section>
         {/* List of Restaurants */}
-        <section className="d-md-flex justify-content-md-between align-items-center px-4 py-5">
-          <div className="mb-5 text-center">{/* in here goes picture*/}</div>
+        <section className="d-md-none d-block  justify-content-md-between align-items-center px-4 py-5">
+          <div className="mb-5 text-center">
+            <img
+              src="/images/becomeVendor/6.png"
+              alt=""
+              className="img-fluid w-100"
+            />
+          </div>
           <div className="text-center">
             <div className="list mx-auto">
               Join over 30 restaurants already on Easymunch
             </div>
-            <div
-              style={{ backgroundColor: "#040404" }}
-              className="text-center text-light p-2 rounded mt-4"
-            >
+            <button className="text-center w-100 bg-dark br-theme text-light py-3 mt-4">
               Get Started
-            </div>
+            </button>
+          </div>
+        </section>
+        <section className="d-md-flex d-none  justify-content-md-between align-items-center px-4 py-5">
+          <div className="text-center">
+            <h2 className="list mx-auto">
+              Join over 30 restaurants already on Easymunch
+            </h2>
+            <button className="text-center w-100 bg-dark br-theme text-light py-3 mt-4">
+              Get Started
+            </button>
+          </div>
+          <div className="mb-5 text-center">
+            <img
+              src="/images/becomeVendor/6.png"
+              alt=""
+              className="img-fluid"
+              style={{ maxWidth: "70%" }}
+            />
           </div>
         </section>
         {/* How it works */}
@@ -197,7 +233,7 @@ function BecomeVendor() {
               </div>
               <div className="mb-4">
                 <img
-                  src="image/customer order.png"
+                  src="/images/becomeVendor/7.png"
                   alt=""
                   className="p-2 img-fluid"
                 />
@@ -226,7 +262,7 @@ function BecomeVendor() {
               </div>
               <div className="mb-4">
                 <img
-                  src="image/you prepare.png"
+                  src="/images/becomeVendor/8.png"
                   alt=""
                   className="p-2 img-fluid"
                 />
@@ -254,7 +290,7 @@ function BecomeVendor() {
               </div>
               <div className="mb-4">
                 <img
-                  src="image/delivery partner.png"
+                  src="/images/becomeVendor/9.png"
                   alt=""
                   className="p-2 img-fluid"
                 />
@@ -268,10 +304,10 @@ function BecomeVendor() {
           </div>
         </section>
         {/* FAQs */}
-        <section>
+        <section className="px-3 px-md-2">
           <div>
             <div>
-              <h1 className="black fw-bold">Questions?. We've got answers.</h1>
+              <h1 className="black fw-bold">Questions? We've got answers.</h1>
             </div>
             {/* Question1 */}
             <div className="mt-3 mb-4">

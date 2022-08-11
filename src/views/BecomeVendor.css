@@ -1,11 +1,11 @@
 .free{
-    color: #F7F7F7;
+    color: #D9D9D9;
 }
 .black{
     color: #040404;
 }
 .play{
-    z-index: 2;
+    z-index: 0;
     width: 40vw;
 }
 .delay{
@@ -13,7 +13,6 @@
 }
 .deliver{
     font-size: 2rem;
-    max-width: 35vw;
 }
 .task{
     border-radius: 10px;
@@ -35,7 +34,6 @@
     font-weight: 500;
 }
 .list{
-    font-size: 23px;
     font-weight: 500;
     color: #040404;
     width: 25vw;
