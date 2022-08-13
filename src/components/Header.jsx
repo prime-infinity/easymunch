@@ -68,7 +68,7 @@ function Header() {
   };
 
   const goToUserProfile = () => {
-    navigate("/user-dashboard");
+    navigate("/user-dashboard/profile");
     showSecMenu();
   };
 

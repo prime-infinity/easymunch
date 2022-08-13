@@ -147,6 +147,14 @@ a {
   height: 18px;
   vertical-align: text-bottom;
 }
+.svg-dash-icon {
+  width: 25px;
+  vertical-align: text-bottom;
+}
+.d-flex-align-center{
+  display: flex;
+  align-items: center;
+}
 .navbar-icon-badge {
   position: absolute;
   top: -10px;
@@ -289,18 +297,6 @@ a {
 .in-circle {
   background-color: #eee;
 }
-/*.carb-btn-fix {
-  position: fixed;
-  bottom: 2%;
-  left: 9%;
-  width: 82%;
-}
-@media (min-width: 768px) {
-  .carb-btn-fix {
-    left: 30%;
-    width: 60%;
-  }
-}*/
 .detail-quantity {
   border-top: 2px solid black;
   border-bottom: 2px solid black;
@@ -595,4 +591,19 @@ span.cat-icon {
 .n-checkbox{
   height: 20px;
   width: 20px;
+}
+.col-2-n{
+  flex: 0 0 auto;
+  width: 17%;
+}
+
+.br-tr-lb{
+  border-top-right-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+.br-left-only-dark{
+  border-left: 3px solid black;
+}
+.text-97{
+  color:#979797;
 }
