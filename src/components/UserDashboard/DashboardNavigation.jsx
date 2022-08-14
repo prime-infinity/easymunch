@@ -4,10 +4,7 @@ function DashboardNavigation() {
   const location = useLocation();
   return (
     <>
-      <div
-        className="border"
-        style={{ backgroundColor: "#ffffff", height: "100vh" }}
-      >
+      <div style={{ backgroundColor: "#ffffff", height: "100vh" }}>
         <div className="row pt-5 mt-5 px-2">
           <div
             className={`col-11 ps-0 br-tr-lb mt-5 ${
