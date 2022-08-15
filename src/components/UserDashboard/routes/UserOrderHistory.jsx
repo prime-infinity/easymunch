@@ -2,8 +2,8 @@ function UserOrderHistory() {
   return (
     <div className="row flex-nowrap" style={{ overflowX: "scroll" }}>
       <div className="col-12">
-        <div className="card border-0 shadow-n px-md-4 px-2 py-5 br-theme">
-          <table className="table table-hover table-n ">
+        <div className="">
+          <table className="shadow-n bg-white br-theme table table-hover table-n ">
             <thead className="">
               <tr>
                 <th scope="col" className="border-0  ps-5">

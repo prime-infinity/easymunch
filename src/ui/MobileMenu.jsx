@@ -22,6 +22,10 @@ function MobileMenu({ toRest, toLogin, toHome, logout, openCart, closeMenu }) {
     navigate("/user-dashboard/profile");
     closeMenu();
   };
+  const goToUserOrders = () => {
+    navigate("/user-dashboard/history");
+    closeMenu();
+  };
 
   return (
     <>
@@ -109,23 +113,44 @@ function MobileMenu({ toRest, toLogin, toHome, logout, openCart, closeMenu }) {
                 </span>
               </li>
               {authState && (
-                <li className="py-3" onClick={goToUserProfile}>
-                  <span className="btn rounded-pill">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      className="svg-icon me-2"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span>My Profile</span>
-                  </span>
-                </li>
+                <>
+                  <li className="py-3" onClick={goToUserProfile}>
+                    <span className="btn rounded-pill">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="svg-icon me-2"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                      <span>My Profile</span>
+                    </span>
+                  </li>
+                  <li className="py-3" onClick={goToUserOrders}>
+                    <span className="btn rounded-pill">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="svg-icon me-2"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                        strokeWidth={2}
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"
+                        />
+                      </svg>
+                      <span>My Orders</span>
+                    </span>
+                  </li>
+                </>
               )}
               {authState && (
                 <li className="py-3" onClick={logout}>
