@@ -19,7 +19,7 @@ function MobileMenu({ toRest, toLogin, toHome, logout, openCart, closeMenu }) {
   const authState = useSelector((state) => state.auth.auth);
 
   const goToUserProfile = () => {
-    navigate("/user-dashboard");
+    navigate("/user-dashboard/profile");
     closeMenu();
   };
 

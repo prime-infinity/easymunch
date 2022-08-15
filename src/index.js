@@ -19,6 +19,7 @@ import CheckoutAddress from "./components/Checkout/CheckoutAddress";
 import CheckoutReview from "./components/Checkout/CheckoutReview";
 import UserDashboard from "./views/UserDashboard";
 import UserProfile from "./components/UserDashboard/routes/UserProfile";
+import UserOrderHistory from "./components/UserDashboard/routes/UserOrderHistory";
 
 ReactDOM.render(
   <React.StrictMode>
@@ -39,6 +40,7 @@ ReactDOM.render(
             </Route>
             <Route path="/user-dashboard" element={<UserDashboard />}>
               <Route path="profile" element={<UserProfile />} />
+              <Route path="history" element={<UserOrderHistory />} />
             </Route>
           </Route>
         </Routes>

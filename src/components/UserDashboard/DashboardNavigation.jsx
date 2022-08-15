@@ -1,7 +1,15 @@
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 
 function DashboardNavigation() {
+  let navigate = useNavigate();
+
   const location = useLocation();
+  const toProfile = () => {
+    navigate("/user-dashboard/profile");
+  };
+  const toHistory = () => {
+    navigate("/user-dashboard/history");
+  };
   return (
     <>
       <div style={{ backgroundColor: "#ffffff", height: "100vh" }}>
@@ -13,6 +21,7 @@ function DashboardNavigation() {
             }`}
           >
             <span
+              onClick={toProfile}
               className={`btn d-flex-align-center`}
               style={{ height: "51px" }}
             >
@@ -35,11 +44,12 @@ function DashboardNavigation() {
           </div>
           <div
             className={`col-11 ps-0 br-tr-lb mt-3 ${
-              location.pathname === "/user-dashboard/order-history" &&
+              location.pathname === "/user-dashboard/history" &&
               "bg-theme br-left-only-dark"
             }`}
           >
             <span
+              onClick={toHistory}
               className={`btn d-flex-align-center`}
               style={{ height: "51px" }}
             >
