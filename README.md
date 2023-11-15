@@ -11,7 +11,7 @@ to offer you a seamless and delectable journey from menu exploration to doorstep
 
 <br>
 
-##🌟 Key Features:
+## 🌟 Key Features:
 ## Key Features:
 
 1. Detailed menu with prices, descriptions, and high-quality images.
