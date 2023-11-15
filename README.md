@@ -12,7 +12,6 @@ to offer you a seamless and delectable journey from menu exploration to doorstep
 <br>
 
 ## 🌟 Key Features:
-## Key Features:
 
 1. Detailed menu with prices, descriptions, and high-quality images.
 2. Search functionality for specific dishes or cuisines.
@@ -27,7 +26,7 @@ to offer you a seamless and delectable journey from menu exploration to doorstep
 
 <br>
 
-##👨‍💻 Technologies used for this application
+## 👨‍💻 Technologies used for this application
 
 1. React.
 2. JavaScript.
