@@ -1,16 +1,43 @@
-#thoughts
-1:change wrapper image in vendor dashboard
-2:Text in vendor dashboard is too small
-3: Whole text in vendor dashboard needs rearragnement
-4: we are even to consider the icons that lead us to become a vendor page. citation, doordash
-5: seems whole vendor page needs to be redesigned
-6: there is a difference in design between card modal and checkout details, number of item selected
-7: in the checkout page, there needs to be button to press to confirm a particular section
-8: Delivery method in checkout page heading needs more attention
+## Easymunch
 
-9:argue that the last section of checkout is not necessary
-10: emphasise that there still is no "next"buttons in the checkouts
-11: argue that the badge that shows name in the mobile menu when logged in looks too much like a button
-12: there is _alot_ of work to be done in userdashboard, make citations to the one you did for favadmin
+## [Live Site Here](https://easymunch.netlify.app/)
 
-13:gift address
+<br>
+
+A cutting-edge restaurant and food delivery website designed to redefine your dining experience.
+
+Crafted with precision and innovation, Easymunch brings together the best of technology 
+to offer you a seamless and delectable journey from menu exploration to doorstep delivery.
+
+<br>
+
+## 🌟 Key Features:
+
+1. Detailed menu with prices, descriptions, and high-quality images.
+2. Search functionality for specific dishes or cuisines.
+3. User registration and login for personalized experiences.
+4. Add to cart functionality for item selection.
+5. Multiple delivery choices.
+6. Reservation System.
+7. Ability to select a food vendor of choice.
+8. Onboarding of third-party vendors.
+9. Social Media Integration ( Social media login options ).
+
+
+<br>
+
+## 👨‍💻 Technologies used for this application
+
+1. React.
+2. JavaScript.
+3. Bootstrap.
+4. Redux Toolkit.
+5. Jest.
+
+
+![1](https://github.com/Sir-Rumeh/easymunch/assets/95687544/da98c8a6-6ec6-4836-9ce8-02dea38069d8)
+
+![2](https://github.com/Sir-Rumeh/easymunch/assets/95687544/51aff656-82fb-4a2b-aff0-081140b1bf52)
+
+![3](https://github.com/Sir-Rumeh/easymunch/assets/95687544/8fe71848-f7f8-475d-bc95-7a2242018820)
+
